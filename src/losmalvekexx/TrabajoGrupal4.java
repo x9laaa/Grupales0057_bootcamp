@@ -18,6 +18,9 @@ public class TrabajoGrupal4 {
         sc.nextLine();
         while (cantUsuarios > 0) {
 
+            System.out.println("************************************************");
+            System.out.println("************************************************");
+
             System.out.println("Ingresa el nombre del Usuario");
             nombre = sc.nextLine();
 
@@ -39,7 +42,11 @@ public class TrabajoGrupal4 {
             tipoUser = sc.nextInt();
             sc.nextLine();
 
+
+
             if (tipoUser == 1){
+
+
 
                 String nomUser = "Cliente";
                 String direccion;
@@ -56,6 +63,7 @@ public class TrabajoGrupal4 {
 
                 System.out.println("Ingresa la cantidad de empleados del Usuario");
                 cantEmpleados = sc.nextInt();
+                sc.nextLine();
                 System.out.println("************************************************");
                 System.out.println("************************************************");
                 System.out.println("El usuario ingresado es\n" +
@@ -69,6 +77,8 @@ public class TrabajoGrupal4 {
 
             } else if (tipoUser == 2){
 
+
+
                 String nomUser = "Profesional";
                 int anioExp;
                 String departamento;
@@ -78,6 +88,7 @@ public class TrabajoGrupal4 {
 
                 System.out.println("Ingresa el departamento del Usuario");
                 departamento = sc.next();
+                sc.nextLine();
                 System.out.println("************************************************");
                 System.out.println("************************************************");
                 System.out.println("El usuario ingresado es\n" +
@@ -90,15 +101,18 @@ public class TrabajoGrupal4 {
 
             } else if (tipoUser == 3){
 
+
+
                 String nomUser = "Administrativo";
                 String funcion;
                 String nomSuperior;
 
                 System.out.println("Ingresa la funcion del Usuario");
                 funcion = sc.next();
-
+                sc.nextLine();
                 System.out.println("Ingresa el Nombre de Superior del Usuario");
-                nomSuperior = sc.next();
+                nomSuperior = sc.nextLine();
+
                 System.out.println("************************************************");
                 System.out.println("************************************************");
                 System.out.println("El usuario ingresado es\n" +
