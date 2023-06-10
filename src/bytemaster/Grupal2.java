@@ -67,6 +67,7 @@ public class Grupal2 {
             System.out.println("Error: Comuna requerida");
             return;
         }
+<<<<<<< HEAD
         // Solicitar y validar Edad
         System.out.print("Ingrese la edad: ");
         int edad = scanner.nextInt();
@@ -74,5 +75,23 @@ public class Grupal2 {
             System.out.println("Error: Edad inválida");
             return;
         }
+// Mostrar los datos del cliente
+        System.out.println(" ");
+        System.out.println("=== Datos del Cliente ===");
+        System.out.println(" ");
+        System.out.println("RUT: " + rut);
+        System.out.println("Nombres: " + nombres);
+        System.out.println("Apellidos: " + apellidos);
+        System.out.println("Teléfono: " + telefono);
+        System.out.println("AFP: " + afp);
+        System.out.println("Sistema de Salud: " + (sistemaSalud == 1 ? "Fonasa" : "Isapre"));
+        System.out.println("Dirección: " + direccion);
+        System.out.println("Comuna: " + comuna);
+        System.out.println("Edad: " + edad);
+    }
+=======
 
+>>>>>>> parent of e017939 (primer cummit alex)
 }
+
+
