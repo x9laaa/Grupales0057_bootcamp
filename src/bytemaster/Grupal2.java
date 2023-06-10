@@ -67,5 +67,12 @@ public class Grupal2 {
             System.out.println("Error: Comuna requerida");
             return;
         }
+        // Solicitar y validar Edad
+        System.out.print("Ingrese la edad: ");
+        int edad = scanner.nextInt();
+        if (edad >= 120) {
+            System.out.println("Error: Edad inválida");
+            return;
+        }
 
 }
