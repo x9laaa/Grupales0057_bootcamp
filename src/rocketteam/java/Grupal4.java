@@ -33,6 +33,14 @@ public class Grupal4 {
                     System.out.println("Teléfono: " + telefono);
                     System.out.println("Cantidad de empleados: " + cantidadEmpleados);
                     break;
+                case "profesional":
+                    System.out.print("Ingrese los años de experiencia: ");
+                    int experiencia = scanner.nextInt();
+                    System.out.print("Ingrese el departamento: ");
+                    String departamento = scanner.nextLine();
+                    System.out.println("Años de experiencia: " + experiencia);
+                    System.out.println("Departamento: " + departamento);
+                    break;
             }
         }
     }
