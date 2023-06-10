@@ -21,5 +21,28 @@ public class Grupal2 {
             System.out.println("Error: Nombres requeridos");
             return;
         }
+        // Solicitar y validar apellidos
+        System.out.print("Ingrese los apellidos: ");
+        String apellidos = scanner.nextLine();
+        if (apellidos.isEmpty()) {
+            System.out.println("Error: Apellidos requeridos");
+            return;
+        }
+
+        // Solicitar y validar telefono
+        System.out.print("Ingrese el teléfono: ");
+        String telefono = scanner.nextLine();
+        if (telefono.length() > 15) {
+            System.out.println("Error: Teléfono inválido");
+            return;
+        }
+
+        // Solicitar y validar AFP
+        System.out.print("Ingrese la AFP: ");
+        String afp = scanner.nextLine();
+        if (afp.isEmpty()) {
+            System.out.println("Error: AFP requerida");
+            return;
+        }
 
 }
