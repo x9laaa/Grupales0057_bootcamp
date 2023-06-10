@@ -1,4 +1,4 @@
-package rocketteam;
+package rocketteam.java;
 import java.util.Scanner;
 public class Grupal4 {
     public static void main(String[] args) {
