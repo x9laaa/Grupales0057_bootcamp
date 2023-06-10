@@ -44,5 +44,21 @@ public class Grupal2 {
             System.out.println("Error: AFP requerida");
             return;
         }
+        // Solicitar y validar Sistema de salud
+        System.out.print("Ingrese el sistema de salud (1: Fonasa, 2: Isapre): ");
+        int sistemaSalud = scanner.nextInt();
+        if (sistemaSalud != 1 && sistemaSalud != 2) {
+            System.out.println("Error: Sistema de salud inválido");
+            return;
+        }
+
+        // Solicitar y validar Dirección
+        System.out.print("Ingrese la dirección: ");
+        scanner.nextLine(); // Consumir el salto de línea anterior
+        String direccion = scanner.nextLine();
+        if (direccion.length() > 50) {
+            System.out.println("Error: Dirección inválida");
+            return;
+        }
 
 }
