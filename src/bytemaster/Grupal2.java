@@ -67,7 +67,7 @@ public class Grupal2 {
             System.out.println("Error: Comuna requerida");
             return;
         }
-<<<<<<< HEAD
+
         // Solicitar y validar Edad
         System.out.print("Ingrese la edad: ");
         int edad = scanner.nextInt();
@@ -89,9 +89,7 @@ public class Grupal2 {
         System.out.println("Comuna: " + comuna);
         System.out.println("Edad: " + edad);
     }
-=======
 
->>>>>>> parent of e017939 (primer cummit alex)
 }
 
 
