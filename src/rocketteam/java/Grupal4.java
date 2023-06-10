@@ -30,9 +30,9 @@ public class Grupal4 {
                     System.out.print("Ingrese la dirección: ");
                     String direccion = scanner.nextLine();
                     System.out.print("Ingrese el teléfono: ");
-                    int telefono = Integer.parseInt(scanner.next());
+                    int telefono = Integer.parseInt(scanner.nextLine());
                     System.out.print("Ingrese la cantidad de empleados: ");
-                    int cantidadEmpleados = scanner.nextInt();
+                    int cantidadEmpleados = Integer.parseInt(scanner.nextLine());
                     System.out.println("Dirección: " + direccion);
                     System.out.println("Teléfono: " + telefono);
                     System.out.println("Cantidad de empleados: " + cantidadEmpleados);
