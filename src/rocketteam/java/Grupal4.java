@@ -33,6 +33,7 @@ public class Grupal4 {
                     System.out.println("Teléfono: " + telefono);
                     System.out.println("Cantidad de empleados: " + cantidadEmpleados);
                     break;
+            }
         }
     }
 }
