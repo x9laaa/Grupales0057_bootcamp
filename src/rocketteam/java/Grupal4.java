@@ -21,6 +21,18 @@ public class Grupal4 {
             System.out.println("Nombre: " + nombre);
             System.out.println("Fecha de Nacimiento: " + fechaNacimiento);
             System.out.println("RUN: " + run);
+            switch (tipoPerfil) {
+                case "cliente":
+                    System.out.print("Ingrese la dirección: ");
+                    String direccion = scanner.nextLine();
+                    System.out.print("Ingrese el teléfono: ");
+                    int telefono = Integer.parseInt(scanner.next());
+                    System.out.print("Ingrese la cantidad de empleados: ");
+                    int cantidadEmpleados = scanner.nextInt();
+                    System.out.println("Dirección: " + direccion);
+                    System.out.println("Teléfono: " + telefono);
+                    System.out.println("Cantidad de empleados: " + cantidadEmpleados);
+                    break;
         }
     }
 }
