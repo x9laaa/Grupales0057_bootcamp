@@ -60,5 +60,12 @@ public class Grupal2 {
             System.out.println("Error: Dirección inválida");
             return;
         }
+        // Solicitar y validar Comuna
+        System.out.print("Ingrese la comuna: ");
+        String comuna = scanner.nextLine();
+        if (comuna.isEmpty()) {
+            System.out.println("Error: Comuna requerida");
+            return;
+        }
 
 }
