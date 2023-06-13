@@ -1,3 +1,4 @@
+package grupoada;
 import java.util.Scanner;
 
 public class grupal1Grupoada {
