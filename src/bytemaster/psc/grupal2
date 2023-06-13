@@ -1,0 +1,36 @@
+Proceso CompaniaSeguros
+    Definir rut Como Entero
+    Definir nombres Como Cadena
+    Definir apellidos Como Cadena
+    Definir telefono Como Cadena
+    Definir afp Como Cadena
+    Definir sistemaSalud Como Entero
+    Definir direccion Como Cadena
+    Definir comuna Como Cadena
+    Definir edad Como Entero
+
+    Escribir "Ingrese su RUT sin guión ni digito verificador: "
+    Leer rut
+
+    Escribir "Ingrese sus nombres: "
+    Leer nombres
+
+    Escribir "Ingrese sus apellidos: "
+    Leer apellidos
+
+    Escribir "Ingrese su teléfono (no más de 15 caracteres): "
+    Leer telefono
+
+    Escribir "Ingrese su AFP: "
+    Leer afp
+    Escribir "Ingrese su sistema de salud (1 para Fonasa, 2 para Isapre): "
+        Leer sistemaSalud
+
+        Escribir "Ingrese su dirección (texto no superior a 50 caracteres): "
+        Leer direccion
+
+        Escribir "Ingrese su comuna: "
+        Leer comuna
+
+        Escribir "Ingrese su edad (menor a 120 años): "
+        Leer edad
