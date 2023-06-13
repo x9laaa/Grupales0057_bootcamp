@@ -1,0 +1,25 @@
+Proceso CompaniaSeguros
+    Definir rut Como Entero
+    Definir nombres Como Cadena
+    Definir apellidos Como Cadena
+    Definir telefono Como Cadena
+    Definir afp Como Cadena
+    Definir sistemaSalud Como Entero
+    Definir direccion Como Cadena
+    Definir comuna Como Cadena
+    Definir edad Como Entero
+
+    Escribir "Ingrese su RUT sin guión ni digito verificador: "
+    Leer rut
+
+    Escribir "Ingrese sus nombres: "
+    Leer nombres
+
+    Escribir "Ingrese sus apellidos: "
+    Leer apellidos
+
+    Escribir "Ingrese su teléfono (no más de 15 caracteres): "
+    Leer telefono
+
+    Escribir "Ingrese su AFP: "
+    Leer afp
