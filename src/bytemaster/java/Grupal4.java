@@ -1,4 +1,4 @@
-package bytemaster;
+package bytemaster.java;
 
 public class Grupal4 {
 }
