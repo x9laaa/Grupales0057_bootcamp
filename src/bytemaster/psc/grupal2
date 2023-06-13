@@ -63,3 +63,29 @@ Proceso CompaniaSeguros
 		Si edad >= 120 Entonces
         Escribir "Error: La edad ingresada no es válida."
     Sino
+
+        Escribir "Datos del cliente:"
+        Escribir "RUT:", rut
+        Escribir "Nombres:", nombres
+        Escribir "Apellidos:", apellidos
+        Escribir "Teléfono:", telefono
+        Escribir "AFP:", afp
+        Escribir "Sistema de salud:"
+		Si sistemaSalud = 1 Entonces
+			sistemaSalud=Fonasa
+		Sino sistemaSalud=Isapre
+				Escribir "Dirección:", direccion
+				Escribir "Comuna:", comuna
+				Escribir "Edad:", edad
+			FinSi
+		FinSi
+	FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+
+FinProceso
