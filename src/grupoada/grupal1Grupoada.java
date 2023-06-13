@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AccidenteACH {
+public class grupal1Grupoada {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String nombres, apellidos, cargo;
