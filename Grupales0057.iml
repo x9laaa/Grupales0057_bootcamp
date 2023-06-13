@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<module version="4">
-=======
 <module type="JAVA_MODULE" version="4">
->>>>>>> c68b035b76bff43a923f4928286298d68213f6cc
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-<<<<<<< HEAD
-    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
-=======
     <orderEntry type="inheritedJdk" />
->>>>>>> c68b035b76bff43a923f4928286298d68213f6cc
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
