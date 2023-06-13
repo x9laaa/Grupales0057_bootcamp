@@ -34,3 +34,32 @@ Proceso CompaniaSeguros
 
         Escribir "Ingrese su edad (menor a 120 años): "
         Leer edad
+
+
+    Si rut >= 99999999 Entonces
+        Escribir "Error: El RUT ingresado no es válido."
+	Sino
+		Si nombres = "" Entonces
+        Escribir "Error: El campo Nombres es obligatorio."
+	Sino
+		Si apellidos = "" Entonces
+        Escribir "Error: El campo Apellidos es obligatorio."
+	Sino
+		Si Longitud(telefono) > 15 Entonces
+        Escribir "Error: El teléfono ingresado no es válido."
+	Sino
+		Si afp = "" Entonces
+        Escribir "Error: El campo AFP es obligatorio."
+	Sino
+		Si sistemaSalud <> 1 Y sistemaSalud <> 2 Entonces
+        Escribir "Error: El sistema de salud ingresado no es válido."
+	Sino
+		Si Longitud(direccion) > 50 Entonces
+        Escribir "Error: La dirección ingresada supera los 50 caracteres."
+	Sino
+		Si comuna = "" Entonces
+        Escribir "Error: El campo Comuna es obligatorio."
+	Sino
+		Si edad >= 120 Entonces
+        Escribir "Error: La edad ingresada no es válida."
+    Sino
