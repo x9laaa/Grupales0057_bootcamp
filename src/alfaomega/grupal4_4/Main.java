@@ -11,14 +11,6 @@ public class Main {
     private static Registro crearCliente(Registro registro, String nombre, String fechaNacimiento, String run) {
         Scanner sc = new Scanner(System.in);
         Cliente cliente = new Cliente();
-        /*
-        System.out.println("Ingrese el nombre del usuario: ");
-        String nombre = sc.nextLine();
-        System.out.println("Ingrese fecha de nacimiento: ");
-        String fechaNacimiento = sc.nextLine();
-        System.out.println("Ingrese su RUN: ");
-        String run = sc.nextLine();
-         */
 
         System.out.println("Ingrese su direccion: ");
         String direccion = sc.nextLine();
@@ -40,19 +32,11 @@ public class Main {
     private static Registro crearProfesional(Registro registro, String nombre, String fechaNacimiento, String run) {
         Scanner sc = new Scanner(System.in);
         Profesional profesional = new Profesional();
-        /*
-        System.out.println("Ingrese el nombre del usuario: ");
-        String nombre = sc.nextLine();
-        System.out.println("Ingrese fecha de nacimiento: ");
-        String fechaNacimiento = sc.nextLine();
-        System.out.println("Ingrese su RUN: ");
-        String run = sc.nextLine();
-         */
+
         System.out.println("Ingrese sus años de experiencia: ");
         String aniosExperiencia = sc.nextLine();
         System.out.println("Ingrese su departamento/seccion: ");
         String departamento = sc.nextLine();
-
 
         profesional.setNombre(nombre);
         profesional.setFechaNacimiento(fechaNacimiento);
@@ -67,14 +51,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Administrativo administrativo = new Administrativo();
 
-        /*
-        System.out.println("Ingrese el nombre del usuario: ");
-        String nombre = sc.nextLine();
-        System.out.println("Ingrese fecha de nacimiento: ");
-        String fechaNacimiento = sc.nextLine();
-        System.out.println("Ingrese su RUN: ");
-        String run = sc.nextLine();
-         */
         System.out.println("Ingrese su funcion en la empresa: ");
         String funcion = sc.nextLine();
         System.out.println("Ingrese el nombre de su superior: ");
@@ -116,6 +92,8 @@ public class Main {
 
         while(funcionando) {
 
+            System.out.println("Bienvenido al sistema de ingreso de usuarios, complete los siguientes campos");
+            System.out.println("");
             System.out.println("Ingrese el nombre del usuario: ");
             String nombre = sc.next();
             System.out.println("Ingrese la fecha de nacimiento: ");
@@ -125,13 +103,14 @@ public class Main {
 
             System.out.println("""
         
-        Bienvenido al sistema de ingreso de usuarios, que tipo de usuario ingresara:
-        1. Listar Cliente.
-        2. Listar Profesional.
-        3. Listar Administrativo.
-        4. Mostrar Usuarios ingresados.
-        5. SALIR.
-        """);
+            Que tipo de usuario ingresara:
+            1. Listar Cliente.
+            2. Listar Profesional.
+            3. Listar Administrativo.
+            4. Mostrar Usuarios ingresados.
+            5. SALIR.
+            
+            """);
 
             int menu = sc.nextInt();
             if (menu < 1 || menu > 5) {
