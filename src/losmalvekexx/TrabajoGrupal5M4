@@ -1,0 +1,38 @@
+Algoritmo tareagrupal5m4
+    Definir N como Entero;
+    Escribir "Ingrese el número de clientes: ";
+    Leer N;
+
+    Dimension nombres[N] ;
+    Dimension tasas[N];
+
+    Para i <- 1 Hasta N Hacer;
+        Escribir "Ingrese el nombre del cliente ", i , ": ";
+        Leer nombres[i];
+
+        Escribir "Ingrese la tasa de accidentabilidad del cliente ", i, ": ";
+        Leer tasas[i];
+    Fin Para
+
+    Para i <- 1 Hasta N-1 Hacer
+        Para j <- 1 Hasta N-i Hacer
+            Si tasas[j] < tasas[j+1] Entonces
+                // Intercambio de tasas
+                auxTasa <- tasas[j];
+                tasas[j] <- tasas[j+1];
+                tasas[j+1] <- auxTasa;
+
+                // Intercambio de nombres
+                auxNombre <- nombres[j];
+                nombres[j] <- nombres[j+1];
+                nombres[j+1] <- auxNombre;
+            Fin Si
+        Fin Para
+    Fin Para
+
+    Escribir "Clientes ordenados por tasa de accidentabilidad de mayor a menor:";
+    Para i <- 1 Hasta N Hacer
+        Escribir nombres[i], " - ", tasas[i];
+    Fin Para
+
+FinAlgoritmo
