@@ -1,3 +1,5 @@
+package grupoada.evaluaciónfinalpsc;
+
 import java.util.Scanner;
 
 public class SistemaGestionEmpresa {
