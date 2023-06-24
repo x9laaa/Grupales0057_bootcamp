@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RegistroUsuarios {
+public class grupal4Grupoada {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int cantidadUsuarios;
