@@ -84,11 +84,7 @@ public class Modulo4_grupal_8 {
             default:
                 System.out.println("Opción incorrecta");
                 break;
-        }
 
-
-
-        sc.close();
-
+        } sc.close();
     }
 }
