@@ -1,6 +1,6 @@
 
 
-package alfaomega;
+package alfaomega.grupal8;
 import java.util.Scanner;
 public class usuarios {
 
