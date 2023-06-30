@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /**
  * Clase que registra los datos de diferentes tipos de usuarios.
+ * @author Bytemaster
+ * @version 1.0
  */
 
 public class Grupal_8V2 {
