@@ -2,7 +2,15 @@ package bytemaster.java.grupal12.dia8;
 
 import java.util.Scanner;
 
+/**
+ * Clase que registra los datos de diferentes tipos de usuarios.
+ */
 public class Grupal_8 {
+    /**
+     * Método principal que ejecuta el programa.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
