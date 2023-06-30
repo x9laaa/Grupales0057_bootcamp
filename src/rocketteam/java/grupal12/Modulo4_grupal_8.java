@@ -1,3 +1,10 @@
+/**
+ * Clase que permite el ingreso de datos de usuarios de una empresa, o cliente de la empresa, de acuerdo a su perfil y los muestra por pantalla.
+ * @author: Rocket Team
+ * @version: 1.0
+ *
+ */
+
 package rocketteam.java.grupal12;
 
 import rocketteam.java.grupal_8.Administrativo;
@@ -12,11 +19,33 @@ public class Modulo4_grupal_8 {
     public static void main(String[] args) {
 
         String nombre,run,fechaNac,direccion,depto,funcion,nombreSup;
+        /**
+         * Variables
+         * nombre: nombre del usuario a ingresar.
+         * run: run del usuario a ingresar.
+         * fechaNac: fecha de nacimiento del usuario a ingresar.
+         * dirección: dirección del usuario tipo cliente a ingresar.
+         * depto: departamento en el que se desempeña el usuario a ingresar.
+         * nombreSup: nombre del superior del usuario a ingresar.
+         */
         int fono,cantEmpleados,aniosXp;
+        /**
+         * fono: teléfono del usuario tipo cliente a ingresar.
+         * cantEmpleados: cantidad de empleados del usuario tipo cliente.
+         * aniosXp: años de experiencia del usuario tipo profesional.
+         */
         int opcionUsuario;
+        /**
+         * opcionUsuario: opción que define que tipo de usuario se ingresará.
+         */
         ArrayList<Cliente> clientes = new ArrayList<>();
         ArrayList<Profesional> profesionales = new ArrayList<>();
         ArrayList<Administrativo> admins = new ArrayList<>();
+        /**
+         * clientes: Lista de usuarios tipo cliente (clase Cliente)
+         * profesionales: Lista de usuarios tipo profesional (clase Profesional)
+         * admins: Lista de usuarios tipo administraticos (clase Administrativo)
+         */
 
         Scanner sc = new Scanner(System.in);
 
