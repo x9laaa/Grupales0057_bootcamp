@@ -1,7 +1,22 @@
 package grupoada.dia8;
 import java.util.Scanner;
 
+/**
+ * Clase que representa un programa para el registro de usuarios.
+ * Permite ingresar datos básicos del usuario y datos adicionales según el tipo de usuario seleccionado.
+ * Al final, muestra los datos ingresados por el usuario.
+ *
+ * @version 1.0
+ * @since 2023-05-10
+ * @author Grupo Ada
+ */
+
 public class grupal8Grupoada2 {
+    /**
+     * Método principal que inicia la ejecución del programa.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
