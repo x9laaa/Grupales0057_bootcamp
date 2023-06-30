@@ -2,7 +2,7 @@ package bytemaster.java.grupal12.dia8;
 
 import java.util.Scanner;
 
-public class Grupal_8 {
+public class Grupal_8V2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

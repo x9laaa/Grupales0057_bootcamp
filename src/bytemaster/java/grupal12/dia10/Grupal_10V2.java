@@ -2,7 +2,7 @@ package bytemaster.java.grupal12.dia10;
 
 import java.util.Scanner;
 
-public class Grupal_10 {
+public class Grupal_10V2 {
     public static void main(String[] args) {
         String fecha;
         String hora;
