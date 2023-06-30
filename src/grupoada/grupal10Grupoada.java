@@ -1,4 +1,4 @@
-package grupoadaGrupal;
+package grupoada;
 
 import java.util.Scanner;
 
