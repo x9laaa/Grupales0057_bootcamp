@@ -6,7 +6,7 @@ Algoritmo grupal5ada
 	Definir tasa, tasaTemp Como Entero
 	Definir nombres Como Cadena
 	
-	Escribir "Ingresar la cantidad de clientes"
+	Escribir "Ingresar la cantidad de cliente2s"
 	Leer n
 	
 	Dimension tasa[n]

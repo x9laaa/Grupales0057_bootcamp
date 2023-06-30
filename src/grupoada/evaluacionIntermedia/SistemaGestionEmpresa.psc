@@ -6,15 +6,15 @@ Algoritmo SistemaGestionEmpresa
 	cont = 1;
 	
 	repetir
-		Escribir "----- MENÚ PRINCIPAL -----"
+		Escribir "----- MENï¿½ PRINCIPAL -----"
 		Escribir "1. Registrar usuario"
 		Escribir "2. Mostrar usuarios"
-		Escribir "3. Contar usuarios por categoría"
+		Escribir "3. Contar usuarios por categorï¿½a"
 		Escribir "4. Modificar usuario"
 		Escribir "5. Eliminar usuario"
 		Escribir "6. Salir"
 		Escribir "7. Mostrar contador"
-		Escribir "Ingrese el número de la opción:"
+		Escribir "Ingrese el nï¿½mero de la opciï¿½n:"
 		Leer OP;
 		
 		Segun OP hacer
@@ -34,7 +34,7 @@ Algoritmo SistemaGestionEmpresa
 			7:  
 				Escribir "El contador va en:",cont;	
 			De Otro Modo:
-				Escribir "Opción inválida. Ingrese nuevamente."
+				Escribir "Opciï¿½n invï¿½lida. Ingrese nuevamente."
 		Fin Segun
 	hasta que opcion = 6
 	
@@ -54,16 +54,16 @@ Funcion RegistrarUsuario(matriz, cont)
 	Leer run
 	matriz[cont, 3] = run
 	
-	Escribir "Ingrese el número del perfil (1:cliente, 2:profesional, 3:administrativo)"
+	Escribir "Ingrese el nï¿½mero del perfil (1:cliente2, 2:profesional, 3:administrativo)"
 	Leer perfil
 	
 	Segun perfil Hacer	
 		1:
-			matriz[cont, 4] = "cliente";			
-			Escribir "Ingrese la dirección del cliente:";
+			matriz[cont, 4] = "cliente2";
+			Escribir "Ingrese la direcciï¿½n del cliente2:";
 			Leer direccion;
 			matriz[cont, 5] = direccion;	
-			Escribir "Ingrese el teléfono del cliente:";
+			Escribir "Ingrese el telï¿½fono del cliente2:";
 			Leer telefono;
 			matriz[cont, 6] = telefono;				
 			Escribir "Ingrese la cantidad de empleados de la empresa:";
@@ -71,7 +71,7 @@ Funcion RegistrarUsuario(matriz, cont)
 			matriz[cont, 7] = empleados;			
 		2:
 			matriz[cont, 4] = "profesional";			
-			Escribir "Ingrese los años de experiencia del profesional:"
+			Escribir "Ingrese los aï¿½os de experiencia del profesional:"
 			Leer experiencia
 			matriz[cont, 5] = experiencia;		
 			Escribir "Ingrese el departamento del profesional:"
@@ -79,7 +79,7 @@ Funcion RegistrarUsuario(matriz, cont)
 			matriz[cont, 6] = departamento;			
 		3:
 			matriz[cont, 4] = "administrativo";		
-			Escribir "Ingrese la función del administrativo:";
+			Escribir "Ingrese la funciï¿½n del administrativo:";
 			Leer funcionadm;
 			matriz[cont, 5] = funcionadm;			
 			Escribir "Ingrese el nombre de su superior:";
@@ -102,15 +102,15 @@ Funcion MostrarUsuarios(matriz, cont)
 			Escribir "RUN: ", matriz[i, 3]
 			Escribir "Perfil: ", matriz[i, 4]
 			Segun matriz[i, 4] Hacer
-				"cliente":
-					Escribir "Dirección: ", matriz[i, 5]
-					Escribir "Teléfono: ", matriz[i, 6]
+				"cliente2":
+					Escribir "Direcciï¿½n: ", matriz[i, 5]
+					Escribir "Telï¿½fono: ", matriz[i, 6]
 					Escribir "Cantidad de empleados: ", matriz[i, 7]
 				"profesional":
-					Escribir "Años de experiencia: ", matriz[i, 5]
+					Escribir "Aï¿½os de experiencia: ", matriz[i, 5]
 					Escribir "Departamento: ", matriz[i, 6]
 				"administrativo":
-					Escribir "Función: ", matriz[i, 5]
+					Escribir "Funciï¿½n: ", matriz[i, 5]
 					Escribir "Nombre del superior: ", matriz[i, 6]
 			Fin Segun
 		Fin Si
@@ -126,7 +126,7 @@ Funcion ContarUsuariosCategoria(matriz, cont)
 		Para i = 1 hasta cont hacer
 			Si matriz[i, 1] <> "" entonces
 				Segun matriz[i, 4] Hacer
-					"cliente":
+					"cliente2":
 						cantClientes = cantClientes + 1
 					"profesional":
 						cantProfesionales = cantProfesionales + 1
@@ -136,7 +136,7 @@ Funcion ContarUsuariosCategoria(matriz, cont)
 			FinSi
 		Fin Para
 			
-	Escribir "----- USUARIOS POR CATEGORÍA -----"
+	Escribir "----- USUARIOS POR CATEGORï¿½A -----"
 	Escribir "Clientes: ", cantClientes;
 	Escribir "Profesionales: ", cantProfesionales;
 	Escribir "Administrativos: ", cantAdm;
@@ -152,7 +152,7 @@ Funcion ModificarUsuario(matriz, cont)
 	Para i = 1 hasta cont hacer
 		Si matriz[i, 3] = runModificar entonces
 			id_usuario = i;
-			Escribir "Usuario ",matriz[id_usuario, 1]," será modificado, por favor ingrese los nuevos datos:";
+			Escribir "Usuario ",matriz[id_usuario, 1]," serï¿½ modificado, por favor ingrese los nuevos datos:";
 			
 			Escribir "Ingrese el nombre:";
 			Leer nombre;
@@ -164,16 +164,16 @@ Funcion ModificarUsuario(matriz, cont)
 			Leer run;
 			matriz[id_usuario, 3] = run;
 			
-			Escribir "Ingrese el número del perfil (1:cliente, 2:profesional, 3:administrativo)";
+			Escribir "Ingrese el nï¿½mero del perfil (1:cliente2, 2:profesional, 3:administrativo)";
 			Leer perfil;
 			
 			Segun perfil Hacer	
 				1:
-					matriz[id_usuario, 4] = "cliente";
-					Escribir "Ingrese la dirección del cliente:";
+					matriz[id_usuario, 4] = "cliente2";
+					Escribir "Ingrese la direcciï¿½n del cliente2:";
 					Leer direccion;
 					matriz[id_usuario, 5] = direccion;
-					Escribir "Ingrese el teléfono del cliente:";
+					Escribir "Ingrese el telï¿½fono del cliente2:";
 					Leer telefono;
 					matriz[id_usuario, 6] = telefono;		
 					Escribir "Ingrese la cantidad de empleados de la empresa:";
@@ -181,7 +181,7 @@ Funcion ModificarUsuario(matriz, cont)
 					matriz[id_usuario, 7] = empleados;
 				2:
 					matriz[id_usuario, 4] = "profesional";
-					Escribir "Ingrese los años de experiencia del profesional:"
+					Escribir "Ingrese los aï¿½os de experiencia del profesional:"
 					Leer experiencia
 					matriz[id_usuario, 5] = experiencia;
 					Escribir "Ingrese el departamento del profesional:"
@@ -189,7 +189,7 @@ Funcion ModificarUsuario(matriz, cont)
 					matriz[id_usuario, 6] = departamento;
 				3:
 					matriz[id_usuario, 4] = "administrativo";
-					Escribir "Ingrese la función del administrativo:";
+					Escribir "Ingrese la funciï¿½n del administrativo:";
 					Leer funcionadm;
 					matriz[id_usuario, 5] = funcionadm;
 					Escribir "Ingrese el nombre de su superior:";
@@ -200,7 +200,7 @@ Funcion ModificarUsuario(matriz, cont)
 			Fin Segun
 			Escribir "Usuario registrado exitosamente.";
 		SiNo
-			Escribir "No se encontró ningún usuario con el RUN especificado.";
+			Escribir "No se encontrï¿½ ningï¿½n usuario con el RUN especificado.";
 		FinSi
 	FinPara
 FinFuncion
@@ -236,7 +236,7 @@ Funcion EliminarUsuario(matriz, cont)
 				Escribir "Usuario eliminado exitosamente.";		
 	    FinSi
 		Si i = cont y id_usuario = 0 Entonces
-				Escribir "No se encontró ningún usuario con el RUN especificado.";
+				Escribir "No se encontrï¿½ ningï¿½n usuario con el RUN especificado.";
 		FinSi
 	Fin Para
 FinFuncion

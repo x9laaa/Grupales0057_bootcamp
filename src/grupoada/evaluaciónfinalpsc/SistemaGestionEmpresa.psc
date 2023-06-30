@@ -54,16 +54,16 @@ Funcion RegistrarUsuario(matriz, cont)
 	Leer run
 	matriz[cont, 3] = run
 
-	Escribir "Ingrese el número del perfil (1:cliente, 2:profesional, 3:administrativo)"
+	Escribir "Ingrese el número del perfil (1:cliente2, 2:profesional, 3:administrativo)"
 	Leer perfil
 
 	Segun perfil Hacer
 		1:
-			matriz[cont, 4] = "cliente";
-			Escribir "Ingrese la dirección del cliente:";
+			matriz[cont, 4] = "cliente2";
+			Escribir "Ingrese la dirección del cliente2:";
 			Leer direccion;
 			matriz[cont, 5] = direccion;
-			Escribir "Ingrese el teléfono del cliente:";
+			Escribir "Ingrese el teléfono del cliente2:";
 			Leer telefono;
 			matriz[cont, 6] = telefono;
 			Escribir "Ingrese la cantidad de empleados de la empresa:";
@@ -102,7 +102,7 @@ Funcion MostrarUsuarios(matriz, cont)
 			Escribir "RUN: ", matriz[i, 3]
 			Escribir "Perfil: ", matriz[i, 4]
 			Segun matriz[i, 4] Hacer
-				"cliente":
+				"cliente2":
 					Escribir "Dirección: ", matriz[i, 5]
 					Escribir "Teléfono: ", matriz[i, 6]
 					Escribir "Cantidad de empleados: ", matriz[i, 7]
@@ -126,7 +126,7 @@ Funcion ContarUsuariosCategoria(matriz, cont)
 		Para i = 1 hasta cont hacer
 			Si matriz[i, 1] <> "" entonces
 				Segun matriz[i, 4] Hacer
-					"cliente":
+					"cliente2":
 						cantClientes = cantClientes + 1
 					"profesional":
 						cantProfesionales = cantProfesionales + 1
@@ -164,16 +164,16 @@ Funcion ModificarUsuario(matriz, cont)
 			Leer run;
 			matriz[id_usuario, 3] = run;
 
-			Escribir "Ingrese el número del perfil (1:cliente, 2:profesional, 3:administrativo)";
+			Escribir "Ingrese el número del perfil (1:cliente2, 2:profesional, 3:administrativo)";
 			Leer perfil;
 
 			Segun perfil Hacer
 				1:
-					matriz[id_usuario, 4] = "cliente";
-					Escribir "Ingrese la dirección del cliente:";
+					matriz[id_usuario, 4] = "cliente2";
+					Escribir "Ingrese la dirección del cliente2:";
 					Leer direccion;
 					matriz[id_usuario, 5] = direccion;
-					Escribir "Ingrese el teléfono del cliente:";
+					Escribir "Ingrese el teléfono del cliente2:";
 					Leer telefono;
 					matriz[id_usuario, 6] = telefono;
 					Escribir "Ingrese la cantidad de empleados de la empresa:";
