@@ -1,9 +1,19 @@
 package alfaomega.grupal12.grupal10;
 
 import java.util.Scanner;
-
+/**
+ * Esta clase representa un programa para calcular el promedio de calificaciones de una capacitación y encontrar
+ * la calificación mayor y menor.
+ *
+ * @author AlfaOmega
+ * @version 1.0
+ */
 public class grupal10_2 {
-
+    /**
+     * El punto de entrada principal del programa.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
@@ -55,7 +65,12 @@ public class grupal10_2 {
             System.out.println("Calificación mayor: " + calificacionMayor);
             System.out.println("Calificación menor: " + calificacionMenor);
         }
-
+    /**
+     * Valida si una calificación es válida (entre 1 y 7).
+     *
+     * @param calificacion La calificación a validar.
+     * @return true si la calificación es válida, false de lo contrario.
+     */
         private static boolean validarCalificacion(String calificacion) {
             try {
                 int nota = Integer.parseInt(calificacion);
@@ -73,7 +88,12 @@ public class grupal10_2 {
             }
             return (double) sum / matrizAsistentes.length;
         }
-
+    /**
+     * Encuentra la calificación mayor en la matriz de asistentes.
+     *
+     * @param matrizAsistentes La matriz que contiene los nombres y calificaciones de los asistentes.
+     * @return La calificación mayor.
+     */
         private static String encontrarCalificacionMayor(String[][] matrizAsistentes) {
             String max = matrizAsistentes[0][1];
             for (int i = 1; i < matrizAsistentes.length; i++) {
@@ -83,7 +103,12 @@ public class grupal10_2 {
             }
             return max;
         }
-
+    /**
+     * Encuentra la calificación menor en la matriz de asistentes.
+     *
+     * @param matrizAsistentes La matriz que contiene los nombres y calificaciones de los asistentes.
+     * @return La calificación menor.
+     */
         private static String encontrarCalificacionMenor(String[][] matrizAsistentes) {
             String min = matrizAsistentes[0][1];
             for (int i = 1; i < matrizAsistentes.length; i++) {
