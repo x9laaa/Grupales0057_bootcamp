@@ -18,7 +18,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Grupal_9V2 {public static void main(String[] args) {
+/**
+ * Esta clase permite administrar los procesos diarios de una empresa de asesorías en prevención de riesgos.
+ * Permite registrar los datos de una capacitación, incluyendo los datos del cliente, la capacitación misma y los asistentes.
+ * Al final, muestra los datos ingresados y la cantidad de asistentes por rango de edad.
+ * @author Bytemaster
+ * @version 1.0
+ */
+public class Grupal_9V2 {
+
+    /**
+     * Método principal que se ejecuta al iniciar el programa.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
+    public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
     // Registrar datos de la empresa cliente
