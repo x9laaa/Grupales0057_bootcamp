@@ -1,9 +1,10 @@
 package bytemaster.java.grupal12.dia10;
 
 import java.util.Scanner;
-
 /**
- * Clase que registra los datos de una capacitación y sus asistentes.
+ * Clase que registra los datos de diferentes tipos de usuarios.
+ * @author Bytemaster
+ * @version 1.0
  */
 public class Grupal_10V2{
     /**
