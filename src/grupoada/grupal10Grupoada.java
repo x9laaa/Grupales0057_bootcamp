@@ -2,7 +2,7 @@ package grupoadaGrupal;
 
 import java.util.Scanner;
 
-public class glupal10Grupoada {
+public class grupal10Grupoada {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
