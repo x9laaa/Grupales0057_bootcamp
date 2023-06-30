@@ -2,7 +2,15 @@ package bytemaster.java.grupal12.dia10;
 
 import java.util.Scanner;
 
-public class Grupal_10V2 {
+/**
+ * Clase que registra los datos de una capacitación y sus asistentes.
+ */
+public class Grupal_10V2{
+    /**
+     * Método principal que ejecuta el programa.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         String fecha;
         String hora;
@@ -11,12 +19,11 @@ public class Grupal_10V2 {
         int asistentes;
         String nombre;
         double calificacion;
-        double sumaCalificaciones=0;
+        double sumaCalificaciones = 0;
         double calificacionMayor = Double.MIN_VALUE;
         double calificacionMenor = Double.MAX_VALUE;
 
         Scanner procesos = new Scanner(System.in);
-
 
         System.out.println("**************************************************");
         System.out.println("*                                                *");
@@ -41,7 +48,6 @@ public class Grupal_10V2 {
         asistentes = procesos.nextInt();
 
         String[][] arreglo = new String[asistentes][2];
-
 
         System.out.println("**************************************************");
         System.out.println("*                                                *");
@@ -69,22 +75,20 @@ public class Grupal_10V2 {
 
         double promedioCalificaciones = sumaCalificaciones / asistentes;
 
-
         System.out.println("**************************************************");
         System.out.println("*                                                *");
         System.out.println("*          Resumen de la capacitacion            *");
         System.out.println("*                                                *");
         System.out.println("**************************************************");
-        System.out.println("* La capacitacion fue realizada en la fecha:"+fecha);
-        System.out.println("* La capacitacion comenzo a las: "+hora+" horas");
-        System.out.println("* Realizada en la comuna de: "+lugar);
-        System.out.println("* Duro aproximadamente "+duracion+" minutos");
-        System.out.println("* Y hubieron "+asistentes+" asistentes");
+        System.out.println("* La capacitacion fue realizada en la fecha:" + fecha);
+        System.out.println("* La capacitacion comenzo a las: " + hora + " horas");
+        System.out.println("* Realizada en la comuna de: " + lugar);
+        System.out.println("* Duro aproximadamente " + duracion + " minutos");
+        System.out.println("* Y hubieron " + asistentes + " asistentes");
         System.out.println("* Respecto a las notas dadas por los asistentes, el resumen es el siguiente: ");
         System.out.println("* NOTA PROMEDIO: " + promedioCalificaciones);
         System.out.println("* NOTA MAYOR: " + calificacionMayor);
         System.out.println("* NOTA MENOR: " + calificacionMenor);
-
 
         System.out.println("**************************************************");
         System.out.println(" ");
@@ -94,8 +98,6 @@ public class Grupal_10V2 {
         System.out.println(" ");
         System.out.println(" ");
         System.out.println("**************************************************");
-
-
-
     }
 }
+
