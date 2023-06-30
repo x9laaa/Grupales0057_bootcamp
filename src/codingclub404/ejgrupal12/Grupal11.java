@@ -1,4 +1,4 @@
-package codingclub404.Grupal12;
+package codingclub404.ejgrupal12;
 
 public class Grupal11 {
 
