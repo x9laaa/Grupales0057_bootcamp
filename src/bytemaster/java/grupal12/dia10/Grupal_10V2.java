@@ -6,22 +6,56 @@ import java.util.Scanner;
  * @author Bytemaster
  * @version 1.0
  */
-public class Grupal_10V2{
-    /**
-     * Método principal que ejecuta el programa.
-     *
-     * @param args Los argumentos de la línea de comandos.
-     */
+public class Grupal_10V2 {
     public static void main(String[] args) {
+        /**
+         * Variable que almacena la fecha de la capacitación.
+         */
         String fecha;
+
+        /**
+         * Variable que almacena la hora de inicio del evento.
+         */
         String hora;
+
+        /**
+         * Variable que almacena el lugar del evento.
+         */
         String lugar;
+
+        /**
+         * Variable que almacena la duración del evento en minutos.
+         */
         int duracion;
+
+        /**
+         * Variable que almacena la cantidad de asistentes.
+         */
         int asistentes;
+
+        /**
+         * Variable que almacena el nombre del asistente.
+         */
         String nombre;
+
+        /**
+         * Variable que almacena la calificación del asistente.
+         */
         double calificacion;
+
+        /**
+         * Variable que almacena la suma de todas las calificaciones.
+         */
         double sumaCalificaciones = 0;
+
+        /**
+         * Variable que almacena la calificación mayor.
+         */
         double calificacionMayor = Double.MIN_VALUE;
+
+        /**
+         * Variable que almacena la calificación menor.
+         */
         double calificacionMenor = Double.MAX_VALUE;
 
         Scanner procesos = new Scanner(System.in);
