@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class grupal_u9_grupoada {
+public class grupal_u9_grupoada2 {
     public static void main(String[] args) {
-        List<Cliente> clientes = new ArrayList<>();
-        List<Capacitacion> capacitaciones = new ArrayList<>();
+        List<Cliente2> cliente2s = new ArrayList<>();
+        List<Capacitacion2> capacitaciones = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
         int cantidadClientes;
@@ -42,8 +42,8 @@ public class grupal_u9_grupoada {
             int numeroCapacitacion = scanner.nextInt();
             scanner.nextLine();
 
-            Cliente cliente = new Cliente(rut, nombre, empresa, direccion, comuna, telefono, numeroCapacitacion);
-            clientes.add(cliente);
+            Cliente2 cliente2 = new Cliente2(rut, nombre, empresa, direccion, comuna, telefono, numeroCapacitacion);
+            cliente2s.add(cliente2);
             System.out.println();
         }
 
@@ -79,18 +79,18 @@ public class grupal_u9_grupoada {
             int cantidadAsistentes = scanner.nextInt();
             scanner.nextLine();
 
-            Capacitacion capacitacion = new Capacitacion(numeroCapacitacion, empresa, fechaCapacitacion, hora, lugar, duracion, cantidadAsistentes);
-            capacitaciones.add(capacitacion);
+            Capacitacion2 capacitacion2 = new Capacitacion2(numeroCapacitacion, empresa, fechaCapacitacion, hora, lugar, duracion, cantidadAsistentes);
+            capacitaciones.add(capacitacion2);
             System.out.println();
         }
 
         System.out.println("Datos de las empresas que solicitaron capacitación:");
-        for (Cliente cliente : clientes) {
-            for (Capacitacion capacitacion : capacitaciones) {
-                if (cliente.getNumeroCapacitacion() == capacitacion.getNumeroCapacitacion()) {
-                    System.out.println("Empresa: " + cliente.getEmpresa());
+        for (Cliente2 cliente2 : cliente2s) {
+            for (Capacitacion2 capacitacion2 : capacitaciones) {
+                if (cliente2.getNumeroCapacitacion() == capacitacion2.getNumeroCapacitacion()) {
+                    System.out.println("Empresa: " + cliente2.getEmpresa());
                     System.out.println("Datos de la capacitación:");
-                    System.out.println(capacitacion.toString());
+                    System.out.println(capacitacion2.toString());
                     break;
                 }
             }
@@ -100,20 +100,20 @@ public class grupal_u9_grupoada {
         int entre26y35 = 0;
         int mayores35 = 0;
 
-        for (Cliente cliente : clientes) {
+        for (Cliente2 cliente2 : cliente2s) {
             // Obtener la capacitación asociada al cliente
-            Capacitacion capacitacion = null;
-            for (Capacitacion cap : capacitaciones) {
-                if (cap.getNumeroCapacitacion() == cliente.getNumeroCapacitacion()) {
-                    capacitacion = cap;
+            Capacitacion2 capacitacion2 = null;
+            for (Capacitacion2 cap : capacitaciones) {
+                if (cap.getNumeroCapacitacion() == cliente2.getNumeroCapacitacion()) {
+                    capacitacion2 = cap;
                     break;
                 }
             }
 
-            if (capacitacion != null) {
-                if (capacitacion.calcularEdadPromedio() < 25) {
+            if (capacitacion2 != null) {
+                if (capacitacion2.calcularEdadPromedio() < 25) {
                     menores25++;
-                } else if (capacitacion.calcularEdadPromedio() >= 26 && capacitacion.calcularEdadPromedio() <= 35) {
+                } else if (capacitacion2.calcularEdadPromedio() >= 26 && capacitacion2.calcularEdadPromedio() <= 35) {
                     entre26y35++;
                 } else {
                     mayores35++;
@@ -128,7 +128,7 @@ public class grupal_u9_grupoada {
     }
 }
 
-class Cliente {
+class Cliente2 {
     private int rut;
     private String nombre;
     private String empresa;
@@ -137,8 +137,8 @@ class Cliente {
     private int telefono;
     private int numeroCapacitacion;
 
-    public Cliente(int rut, String nombre, String empresa, String direccion, String comuna, int telefono,
-                   int numeroCapacitacion) {
+    public Cliente2(int rut, String nombre, String empresa, String direccion, String comuna, int telefono,
+                    int numeroCapacitacion) {
         this.rut = rut;
         this.nombre = nombre;
         this.empresa = empresa;
@@ -177,7 +177,7 @@ class Cliente {
     }
 }
 
-class Capacitacion {
+class Capacitacion2 {
     private int numeroCapacitacion;
     private String empresa;
     private String fechaCapacitacion;
@@ -186,8 +186,8 @@ class Capacitacion {
     private int duracion;
     private int cantidadAsistentes;
 
-    public Capacitacion(int numeroCapacitacion, String empresa, String fechaCapacitacion, String hora, String lugar,
-                        int duracion, int cantidadAsistentes) {
+    public Capacitacion2(int numeroCapacitacion, String empresa, String fechaCapacitacion, String hora, String lugar,
+                         int duracion, int cantidadAsistentes) {
         this.numeroCapacitacion = numeroCapacitacion;
         this.empresa = empresa;
         this.fechaCapacitacion = fechaCapacitacion;

@@ -12,13 +12,13 @@ InicioProceso 'Registro de Usuarios'
     Escribir "Seleccione el tipo de perfil del usuario", i, "(1: Cliente, 2: Profesional, 3: Administrativo)"
     Leer tipoPerfil
     Si tipoPerfil = 1 entonces
-      Escribir "Ingrese la dirección del cliente", i
+      Escribir "Ingrese la dirección del cliente2", i
       Leer direccionCliente
-      Escribir "Ingrese el teléfono del cliente", i
+      Escribir "Ingrese el teléfono del cliente2", i
       Leer telefonoCliente
-      Escribir "Ingrese la cantidad de empleados del cliente", i
+      Escribir "Ingrese la cantidad de empleados del cliente2", i
       Leer cantidadEmpleados
-      Escribir "Datos del cliente", i
+      Escribir "Datos del cliente2", i
       Escribir "Nombre:", nombreUsuario
       Escribir "Fecha de nacimiento:", fechaNacimiento
       Escribir "RUN:", runUsuario
