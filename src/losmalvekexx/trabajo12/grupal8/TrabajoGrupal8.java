@@ -3,11 +3,20 @@ package losmalvekexx.trabajo12.grupal8;
 import java.util.Scanner;
 
 
+/**
+ * La clase TrabajoGrupal8 permite ingresar y mostrar información de diferentes tipos de usuarios.
+ */
 public class TrabajoGrupal8 {
+    /**
+     * * El método principal que solicita información al usuario y la muestra según el tipo de usuario seleccionado.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
+        // Ingresa datos básicos del usario
         System.out.print("Ingrese el nombre del usuario: ");
         String nombre = scanner.nextLine();
         System.out.print("Ingrese la fecha de nacimiento del usuario: ");

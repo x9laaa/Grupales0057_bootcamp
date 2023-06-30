@@ -3,7 +3,19 @@ package losmalvekexx.trabajo12.grupal9;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+/**
+ * La clase TrabajoGrupal9 permite registrar información de una empresa y de una capacitación,
+ * así como de los asistentes a dicha capacitación, y mostrar los resultados.
+ */
 public class TrabajoGrupal9 {
+
+
+    /**
+     * El método principal del programa que solicita información al usuario y muestra los resultados.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -89,20 +101,37 @@ public class TrabajoGrupal9 {
         System.out.println("Mayores de 35 años: " + countMayores35);
     }
 }
-
+/**
+ * La clase Asistente representa a un asistente a la capacitación con su nombre y edad.
+ */
 class Asistente {
     private String nombre;
     private int edad;
-
+    /**
+     * Constructor de la clase Asistente.
+     *
+     * @param nombre El nombre del asistente.
+     * @param edad   La edad del asistente.
+     */
     public Asistente(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }
 
+    /**
+     * Obtiene el nombre del asistente.
+     *
+     * @return El nombre del asistente.
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * Obtiene la edad del asistente.
+     *
+     * @return La edad del asistente.
+     */
     public int getEdad() {
         return edad;
     }

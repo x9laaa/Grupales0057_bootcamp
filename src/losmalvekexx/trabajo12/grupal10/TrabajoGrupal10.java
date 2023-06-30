@@ -1,8 +1,16 @@
 package losmalvekexx.trabajo12.grupal10;
 
 import java.util.Scanner;
-
+/**
+ * La clase TrabajoGrupal10 permite registrar información sobre una capacitación y sus asistentes,
+ * y realiza cálculos sobre las calificaciones de los asistentes.
+ */
 public class TrabajoGrupal10 {
+    /**
+     * El método principal del programa que solicita información al usuario y realiza los cálculos.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -67,7 +75,12 @@ public class TrabajoGrupal10 {
         }
         return max;
     }
-
+    /**
+     * Obtiene la calificación más baja.
+     *
+     * @param calificaciones El arreglo de calificaciones.
+     * @return La calificación más baja.
+     */
     public static int obtenerCalificacionMenor(int[] calificaciones) {
         int min = calificaciones[0];
         for (int calificacion : calificaciones) {
