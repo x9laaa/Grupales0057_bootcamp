@@ -1,62 +1,18 @@
 package bytemaster.java;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Clase que registra los datos de una capacitación y sus asistentes.
- */
 public class Grupal_10 {
     public static void main(String[] args) {
-        /**
-         * Variable que almacena la fecha de la capacitación.
-         */
         String fecha;
-
-        /**
-         * Variable que almacena la hora de inicio del evento.
-         */
         String hora;
-
-        /**
-         * Variable que almacena el lugar del evento.
-         */
         String lugar;
-
-        /**
-         * Variable que almacena la duración del evento en minutos.
-         */
         int duracion;
-
-        /**
-         * Variable que almacena la cantidad de asistentes.
-         */
         int asistentes;
-
-        /**
-         * Variable que almacena el nombre del asistente.
-         */
         String nombre;
-
-        /**
-         * Variable que almacena la calificación del asistente.
-         */
         double calificacion;
-
-        /**
-         * Variable que almacena la suma de todas las calificaciones.
-         */
         double sumaCalificaciones = 0;
-
-        /**
-         * Variable que almacena la calificación mayor.
-         */
         double calificacionMayor = Double.MIN_VALUE;
-
-        /**
-         * Variable que almacena la calificación menor.
-         */
         double calificacionMenor = Double.MAX_VALUE;
 
         Scanner procesos = new Scanner(System.in);
