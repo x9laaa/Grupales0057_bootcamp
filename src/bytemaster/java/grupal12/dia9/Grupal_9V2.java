@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Grupal_9 {public static void main(String[] args) {
+public class Grupal_9V2 {public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
     // Registrar datos de la empresa cliente

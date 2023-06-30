@@ -5,7 +5,8 @@ import java.util.Scanner;
 /**
  * Clase que registra los datos de diferentes tipos de usuarios.
  */
-public class Grupal_8 {
+
+public class Grupal_8V2 {
     /**
      * Método principal que ejecuta el programa.
      *
