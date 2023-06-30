@@ -1,9 +1,10 @@
-package codingclub404;  //nombre del package debe ir en minúsculas
+package codingclub404.Grupal12;
 
-public class Grupal11 {  //el nombre de la clase debe ser la primera letra mayúscula y luego camelCase
+public class Grupal11 {
+
     public static void main(String[] args) {
 
-        final boolean valorConstante = false; //los nombres de variables deben ser nombrados utilizando camelCase lower
+        final boolean valorConstante = false;
         String mensaje = "Lorem ipsum dolor sit amet, \n" +
                 "consectetur adipiscing elit. Donec facilisis est ac ante viverra,\n" +
                 "vel efficitur leo consequat. Maecenas quis lorem sit amet diam\n" +
@@ -24,14 +25,6 @@ public class Grupal11 {  //el nombre de la clase debe ser la primera letra mayú
             System.out.println("Valor: " + (i*i));
         }
 
-        //Los comentarios de más de una línea, es decir en bloque, deben registrarse utilizando /* */
-
-        /*Esto es un comentario
-        demasiado grande
-        para que esté en una
-        sola línea*/
-
-        //Se optimiza concatenación en la impresion
         System.out.println("El mensaje es: " + mensaje);
         System.out.println("El valor de la constante es: " + valorConstante);
     }
