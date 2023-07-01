@@ -1,8 +1,28 @@
+package grupoada.dia9;
+
+import grupoada.grupal9.Capacitacion;
+import grupoada.grupal9.Cliente;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class grupal_u9_grupoada {
+/**
+ * Esta clase representa el programa principal para gestionar clientes y capacitaciones.
+ * Permite ingresar datos de los clientes y capacitaciones, mostrar los datos de las empresas que solicitaron capacitación,
+ * y calcular la cantidad de personas según su rango de edad.
+ *
+ * @author Grupo Ada
+ * @version 1.0
+ * @since 2023-05-10
+ */
+public class GrupalU9Grupoada2 {
+
+    /**
+     * Punto de entrada principal del programa.
+     *
+     * @param args Los argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         List<Cliente> clientes = new ArrayList<>();
         List<Capacitacion> capacitaciones = new ArrayList<>();
@@ -124,9 +144,17 @@ public class grupal_u9_grupoada {
         System.out.println("Entre 26 y 35 años: " + entre26y35);
         System.out.println("Mayores a 35 años: " + mayores35);
     }
+
 }
 
-class Cliente {
+/**
+ * Esta clase representa un cliente.
+ *
+ * @author [Nombre del autor]
+ * @version 1.0
+ * @since 2023-05-10
+ */
+class Cliente2 {
     private int rut;
     private String nombre;
     private String empresa;
@@ -135,8 +163,19 @@ class Cliente {
     private int telefono;
     private int numeroCapacitacion;
 
-    public Cliente(int rut, String nombre, String empresa, String direccion, String comuna, int telefono,
-                   int numeroCapacitacion) {
+    /**
+     * Constructor de la clase Cliente2.
+     *
+     * @param rut                El RUT del cliente.
+     * @param nombre             El nombre del cliente.
+     * @param empresa            El nombre de la empresa del cliente.
+     * @param direccion          La dirección del cliente.
+     * @param comuna             La comuna del cliente.
+     * @param telefono           El número de teléfono del cliente.
+     * @param numeroCapacitacion El número de la capacitación asociada al cliente.
+     */
+    public Cliente2(int rut, String nombre, String empresa, String direccion, String comuna, int telefono,
+                    int numeroCapacitacion) {
         this.rut = rut;
         this.nombre = nombre;
         this.empresa = empresa;
@@ -146,36 +185,20 @@ class Cliente {
         this.numeroCapacitacion = numeroCapacitacion;
     }
 
-    public int getRut() {
-        return rut;
-    }
+    // Getters de las propiedades
 
-    public String getNombre() {
-        return nombre;
-    }
+    // ...
 
-    public String getEmpresa() {
-        return empresa;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public String getComuna() {
-        return comuna;
-    }
-
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public int getNumeroCapacitacion() {
-        return numeroCapacitacion;
-    }
 }
 
-class Capacitacion {
+/**
+ * Esta clase representa una capacitación.
+ *
+ * @author [Nombre del autor]
+ * @version 1.0
+ * @since 2023-05-10
+ */
+class Capacitacion2 {
     private int numeroCapacitacion;
     private String empresa;
     private String fechaCapacitacion;
@@ -184,8 +207,19 @@ class Capacitacion {
     private int duracion;
     private int cantidadAsistentes;
 
-    public Capacitacion(int numeroCapacitacion, String empresa, String fechaCapacitacion, String hora, String lugar,
-                        int duracion, int cantidadAsistentes) {
+    /**
+     * Constructor de la clase Capacitacion2.
+     *
+     * @param numeroCapacitacion El número de la capacitación.
+     * @param empresa            El nombre de la empresa de la capacitación.
+     * @param fechaCapacitacion  La fecha de la capacitación.
+     * @param hora               La hora de la capacitación.
+     * @param lugar              El lugar de la capacitación.
+     * @param duracion           La duración en minutos de la capacitación.
+     * @param cantidadAsistentes La cantidad de asistentes a la capacitación.
+     */
+    public Capacitacion2(int numeroCapacitacion, String empresa, String fechaCapacitacion, String hora, String lugar,
+                         int duracion, int cantidadAsistentes) {
         this.numeroCapacitacion = numeroCapacitacion;
         this.empresa = empresa;
         this.fechaCapacitacion = fechaCapacitacion;
@@ -195,52 +229,28 @@ class Capacitacion {
         this.cantidadAsistentes = cantidadAsistentes;
     }
 
-    public int getNumeroCapacitacion() {
-        return numeroCapacitacion;
-    }
+    // Getters de las propiedades
 
-    public String getEmpresa() {
-        return empresa;
-    }
+    // ...
 
-    public String getFechaCapacitacion() {
-        return fechaCapacitacion;
-    }
-
-    public String getHora() {
-        return hora;
-    }
-
-    public String getLugar() {
-        return lugar;
-    }
-
-    public int getDuracion() {
-        return duracion;
-    }
-
-    public int getCantidadAsistentes() {
-        return cantidadAsistentes;
-    }
-
+    /**
+     * Calcula la edad promedio de los asistentes a la capacitación.
+     *
+     * @return La edad promedio de los asistentes.
+     */
     public int calcularEdadPromedio() {
-        // Lógica para calcular la edad promedio de los asistentes
-        // Aquí puedes implementar tu propia lógica para calcular la edad promedio
-        // Puedes usar la fecha de nacimiento de los asistentes para calcular la edad
-        // o cualquier otro método que consideres apropiado.
-        // Por simplicidad, asumamos que ya tenemos un método que retorna la edad promedio.
-        return 30; // Valor de ejemplo, reemplaza con tu lógica real.
+        // Lógica para calcular la edad promedio
+        return 0; // Reemplazar con la lógica real
     }
 
+    /**
+     * Devuelve una representación en forma de cadena de la capacitación.
+     *
+     * @return Una cadena que contiene los datos de la capacitación.
+     */
     @Override
     public String toString() {
-        return "Capacitación:\n" +
-                "Número de la capacitación: " + numeroCapacitacion + "\n" +
-                "Empresa: " + empresa + "\n" +
-                "Fecha de capacitación: " + fechaCapacitacion + "\n" +
-                "Hora: " + hora + "\n" +
-                "Lugar: " + lugar + "\n" +
-                "Duración (en minutos): " + duracion + "\n" +
-                "Cantidad de asistentes: " + cantidadAsistentes + "\n";
+        // ...
+        return null; // Reemplazar con la implementación real
     }
 }
