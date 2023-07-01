@@ -1,8 +1,20 @@
-package grupoada;
+package grupoada.dia10;
 
 import java.util.Scanner;
 
-public class grupal10Grupoada {
+/**
+ * Clase que permite realizar el registro de una capacitación y las calificaciones de los asistentes.
+ *
+ * @version 1.0
+ * @autor Grupo Ada
+ */
+public class Grupal10 {
+
+    /**
+     * Método principal que inicia el programa.
+     *
+     * @param args Argumentos de línea de comandos
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -68,4 +80,3 @@ public class grupal10Grupoada {
         System.out.println("Calificación menor: " + calificacionMenor);
     }
 }
-
