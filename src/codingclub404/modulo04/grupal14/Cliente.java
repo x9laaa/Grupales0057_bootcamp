@@ -2,42 +2,30 @@ package codingclub404.modulo04.grupal14;
 
 public class Cliente {
     private int rut;
-    private String nombres;
-    private String apellidos;
+    private String razonSocial;
     private String telefono;
-    private String afp;
-    private int sistemaDeSalud;
     private String direccion;
     private String comuna;
-    private int edad;
 
     public Cliente() {
     }
 
-    public Cliente(int rut, String nombres, String apellidos, String telefono, String afp, int sistemaDeSalud, String direccion, String comuna, int edad) {
+    public Cliente(int rut, String razonSocial, String telefono, String direccion, String comuna) {
         this.rut = rut;
-        this.nombres = nombres;
-        this.apellidos = apellidos;
+        this.razonSocial = razonSocial;
         this.telefono = telefono;
-        this.afp = afp;
-        this.sistemaDeSalud = sistemaDeSalud;
         this.direccion = direccion;
         this.comuna = comuna;
-        this.edad = edad;
     }
 
     @Override
     public String toString() {
         return "Cliente{" +
                 "rut=" + rut +
-                ", nombres='" + nombres + '\'' +
-                ", apellidos='" + apellidos + '\'' +
+                ", razonSocial='" + razonSocial + '\'' +
                 ", telefono='" + telefono + '\'' +
-                ", afp='" + afp + '\'' +
-                ", sistemaDeSalud=" + sistemaDeSalud +
                 ", direccion='" + direccion + '\'' +
                 ", comuna='" + comuna + '\'' +
-                ", edad=" + edad +
                 '}';
     }
 
@@ -45,24 +33,12 @@ public class Cliente {
         return rut;
     }
 
-    public String getNombres() {
-        return nombres;
-    }
-
-    public String getApellidos() {
-        return apellidos;
+    public String getRazonSocial() {
+        return razonSocial;
     }
 
     public String getTelefono() {
         return telefono;
-    }
-
-    public String getAfp() {
-        return afp;
-    }
-
-    public int getSistemaDeSalud() {
-        return sistemaDeSalud;
     }
 
     public String getDireccion() {
@@ -73,32 +49,16 @@ public class Cliente {
         return comuna;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
     public void setRut(int rut) {
         this.rut = rut;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
     }
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-
-    public void setAfp(String afp) {
-        this.afp = afp;
-    }
-
-    public void setSistemaDeSalud(int sistemaDeSalud) {
-        this.sistemaDeSalud = sistemaDeSalud;
     }
 
     public void setDireccion(String direccion) {
@@ -109,19 +69,8 @@ public class Cliente {
         this.comuna = comuna;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     public String obtenerNombre() {
-        return this.nombres + " " + this.apellidos;
+        return this.razonSocial + " " + this.rut;
     }
 
-    public String obtenerSistemaDeSalud() {
-        if (this.sistemaDeSalud == 1) {
-            return "Fonasa";
-        } else {
-            return "AFP";
-        }
-    }
 }
