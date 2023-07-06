@@ -10,6 +10,11 @@ public class Usuario {
     public String fechaNacimiento;
     public String run;
 
+    //metodos
+    public int mostrarEdad(){
+
+    };
+
     // constructor vacio
     public Usuario(){
     };

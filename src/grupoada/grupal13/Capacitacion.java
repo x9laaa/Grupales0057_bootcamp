@@ -10,6 +10,11 @@ public class Capacitacion {
     private int duracion;
     private int cantidadAsistentes;
 
+    //Metodos
+    public void mostrarDetalle(){
+
+    };
+
     //Contructor vacio
     public Capacitacion(){
 

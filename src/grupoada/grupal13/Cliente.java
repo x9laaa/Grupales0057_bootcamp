@@ -9,6 +9,10 @@ public class Cliente {
     private String direccion;
     private String comuna;
 
+    //metodos
+    public void obtenerNombre(){
+        return razonSocial
+    };
 
     //contructor vacio
     public Cliente(){};
