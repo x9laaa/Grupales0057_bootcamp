@@ -51,10 +51,9 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" +
+        return "Usuario" +
                 "nombre='" + nombre + '\'' +
                 ", fechaNac=" + fechaNac +
-                ", run=" + run +
-                '}';
+                ", run=" + run;
     }
 }

@@ -69,13 +69,12 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "Cliente" +
                 "rut=" + rut +
                 ", razonSocial='" + razonSocial + '\'' +
                 ", telefono=" + telefono +
                 ", dirección='" + direccion + '\'' +
-                ", comuna='" + comuna + '\'' +
-                '}';
+                ", comuna='" + comuna + '\'' ;
     }
 
     public String obtenerNombre() {
