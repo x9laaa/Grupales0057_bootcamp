@@ -1,7 +1,5 @@
 package bytemaster.java;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Grupal_10 {
@@ -13,7 +11,7 @@ public class Grupal_10 {
         int asistentes;
         String nombre;
         double calificacion;
-        double sumaCalificaciones=0;
+        double sumaCalificaciones = 0;
         double calificacionMayor = Double.MIN_VALUE;
         double calificacionMenor = Double.MAX_VALUE;
 
