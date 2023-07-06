@@ -14,7 +14,7 @@ public class Cliente {
 
     public Cliente(int rut, String razonSocial, int telefono, String direccion, String comuna) {
 
-        if (rut > 99999999) {
+        if (rut > 99999998) {
             throw new IllegalArgumentException("El valor debe ser menor a 99999999");
         }
         else this.rut =rut;
@@ -29,7 +29,7 @@ public class Cliente {
     }
 
     public void setRut(int rut) {
-        if (rut > 99999999) {
+        if (rut > 99999998) {
             throw new IllegalArgumentException("El valor debe ser menor a 99999999");
         }
         else this.rut =rut;
