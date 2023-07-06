@@ -12,7 +12,7 @@ public class Usuario {
 
     //metodos
     public int mostrarEdad(){
-
+        return
     };
 
     // constructor vacio

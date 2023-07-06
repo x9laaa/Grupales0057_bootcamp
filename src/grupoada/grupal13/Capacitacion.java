@@ -11,9 +11,10 @@ public class Capacitacion {
     private int cantidadAsistentes;
 
     //Metodos
-    public void mostrarDetalle(){
+    public String mostrarDetalle(){
+        return "La capacitación será en " + lugar + " a las " + hora + " del día" + dia + " y durará " + duracion + " minutos";
 
-    };
+    }
 
     //Contructor vacio
     public Capacitacion(){

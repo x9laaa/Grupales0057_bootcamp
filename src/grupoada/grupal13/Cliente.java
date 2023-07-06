@@ -10,8 +10,8 @@ public class Cliente {
     private String comuna;
 
     //metodos
-    public void obtenerNombre(){
-        return razonSocial
+    public String obtenerNombre(){
+        return razonSocial;
     };
 
     //contructor vacio
