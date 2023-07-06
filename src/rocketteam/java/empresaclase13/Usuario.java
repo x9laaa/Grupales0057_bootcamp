@@ -1,6 +1,7 @@
 package rocketteam.java.empresaclase13;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Date;
 
 public class Usuario {
@@ -40,6 +41,12 @@ public class Usuario {
 
     public void setRun(int run) {
         this.run = run;
+    }
+
+    public String mostrarEdad(){
+        LocalDate fechaActual = LocalDate.now();
+        Period periodo = Period.between(getFechaNac(), fechaActual);
+        return "El usuario tiene " + periodo.getYears() + " años";
     }
 
     @Override

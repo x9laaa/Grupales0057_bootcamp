@@ -5,14 +5,14 @@ public class Cliente {
     private int rut;
     private String razonSocial;
     private int telefono;
-    private String dirección;
+    private String direccion;
     private String comuna;
 
 
     public Cliente() {
     }
 
-    public Cliente(int rut, String razonSocial, int telefono, String dirección, String comuna) {
+    public Cliente(int rut, String razonSocial, int telefono, String direccion, String comuna) {
 
         if (rut > 99999999) {
             throw new IllegalArgumentException("El valor debe ser menor a 99999999");
@@ -20,7 +20,7 @@ public class Cliente {
         else this.rut =rut;
         this.razonSocial = razonSocial;
         this.telefono = telefono;
-        this.dirección = dirección;
+        this.direccion = direccion;
         this.comuna = comuna;
     }
 
@@ -51,12 +51,12 @@ public class Cliente {
         this.telefono = telefono;
     }
 
-    public String getDirección() {
-        return dirección;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setDirección(String dirección) {
-        this.dirección = dirección;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public String getComuna() {
@@ -73,8 +73,12 @@ public class Cliente {
                 "rut=" + rut +
                 ", razonSocial='" + razonSocial + '\'' +
                 ", telefono=" + telefono +
-                ", dirección='" + dirección + '\'' +
+                ", dirección='" + direccion + '\'' +
                 ", comuna='" + comuna + '\'' +
                 '}';
+    }
+
+    public String obtenerNombre() {
+        return getRazonSocial() + " " + getRut();
     }
 }
