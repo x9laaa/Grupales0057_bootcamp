@@ -1,7 +1,5 @@
 package codingclub404.modulo04.grupal13v2;
 
-import java.time.LocalDate;
-
 public class Usuario {
     private String nombre;
     private String fechaDeNacimiento;
