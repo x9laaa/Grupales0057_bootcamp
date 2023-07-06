@@ -2,12 +2,11 @@ package rocketteam.java.empresaclase13;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Date;
 
 public class Capacitacion {
 
     private int identificador;
-    private int rut;
+    private int rutClinte;
     private LocalDate dia;
 
     private LocalTime hora;
@@ -18,9 +17,9 @@ public class Capacitacion {
     public Capacitacion() {
     }
 
-    public Capacitacion(int identificador, int rut, LocalDate dia, LocalTime hora, String lugar, int duracion, int cantidadAsistentes) {
+    public Capacitacion(int identificador, int rutClinte, LocalDate dia, LocalTime hora, String lugar, int duracion, int cantidadAsistentes) {
         this.identificador = identificador;
-        this.rut = rut;
+        this.rutClinte = rutClinte;
         this.dia = dia;
         this.hora = hora;
         this.lugar = lugar;
@@ -36,12 +35,12 @@ public class Capacitacion {
         this.identificador = identificador;
     }
 
-    public int getRut() {
-        return rut;
+    public int getRutClinte() {
+        return rutClinte;
     }
 
-    public void setRut(int rut) {
-        this.rut = rut;
+    public void setRutClinte(int rutClinte) {
+        this.rutClinte = rutClinte;
     }
 
     public LocalDate getDia() {
@@ -92,7 +91,7 @@ public class Capacitacion {
     public String toString() {
         return "Capacitacion{" +
                 "identificador=" + identificador +
-                ", rut=" + rut +
+                ", rut=" + rutClinte +
                 ", dia=" + dia +
                 ", hora=" + hora +
                 ", lugar='" + lugar + '\'' +
