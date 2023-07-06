@@ -21,7 +21,7 @@ public class Grupal_10 {
         System.out.println("**************************************************");
         System.out.println("*                                                *");
         System.out.println("*          ¡Bienvenidos al sistema de procesos   *");
-        System.out.println("*                    ByteMaster                  *");
+        System.out.println("*                    byteMaster                  *");
         System.out.println("*                                                *");
         System.out.println("**************************************************");
 
@@ -90,7 +90,7 @@ public class Grupal_10 {
         System.out.println(" ");
         System.out.println(" ");
         System.out.println(" ");
-        System.out.println("* Muchas gracias por utilizar Software bymaster  *");
+        System.out.println("* Muchas gracias por utilizar Software bytemaster *");
         System.out.println(" ");
         System.out.println(" ");
         System.out.println("**************************************************");
