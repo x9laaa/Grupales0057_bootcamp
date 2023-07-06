@@ -25,7 +25,7 @@ public class Cliente {
     }
 
     public void setRut(int rut) {
-        this.rut = rut;
+     if(rut < 99999999) this.rut = rut;
     }
 
     public String getRazonSocial() {
