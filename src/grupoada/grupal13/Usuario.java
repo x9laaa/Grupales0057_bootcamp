@@ -1,31 +1,61 @@
 package grupoada.grupal13;
 
-import java.time.LocalDate;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Usuario {
+    private String nombre;
+    private String fechaNacimiento; //1996-12-30
+    private String run;
 
-    //atributos
-
-    public String nombre;
-    public String fechaNacimiento;
-    public String run;
-
-    //metodos
-    public int mostrarEdad(){
-        return
-    };
-
-    // constructor vacio
-    public Usuario(){
-    };
+    public Usuario() {
+    }
 
     public Usuario(String nombre, String fechaNacimiento, String run) {
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.run = run;
-    };
+    }
 
-    public Usuario(String nombre) {
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nombre='" + nombre + '\'' +
+                ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                ", run='" + run + '\'' +
+                '}';
+    }
+
+    public String mostrarEdad(String nacimiento){
+        Date nuevodate = new Date();
+        SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
+        String fechaTexto = formato.format(nuevodate);
+
+        String anio = fechaTexto.substring(0, 4);
+        String mes = fechaTexto.substring(5,7);
+        String dia = fechaTexto.substring(8,10);
+
+        int anioHoy = Integer.parseInt(anio);
+        int mesHoy = Integer.parseInt(mes);
+        int diaHoy = Integer.parseInt(dia);
+
+        String anio_usuario = nacimiento.substring(0, 4);
+        String mes_usuario = nacimiento.substring(5,7);
+        String dia_usuario = nacimiento.substring(8,10);
+
+        int anioCumple = Integer.parseInt(anio_usuario); // Año de cumpleaños
+        int mesCumple = Integer.parseInt(mes_usuario);     // Mes de cumpleaños
+        int diaCumple = Integer.parseInt(dia_usuario);    // Día de cumpleaños
+
+        int edad;
+
+        if (mesHoy > mesCumple || (mesHoy == mesCumple && diaHoy >= diaCumple)) {
+            edad = anioHoy - anioCumple;            // Ya ha pasado el cumpleaños de este año
+        } else {
+            edad = anioHoy - anioCumple - 1;            // Aún no ha pasado el cumpleaños de este año
+        }
+
+        return "El usuario tiene: " + edad + " años";
     }
 
     public String getNombre() {
@@ -50,16 +80,6 @@ public class Usuario {
 
     public void setRun(String run) {
         this.run = run;
-    }
-
-    //toString
-    @Override
-    public String toString() {
-        return "Usuario{" +
-                "nombre='" + nombre + '\'' +
-                ", fechaNacimiento='" + fechaNacimiento + '\'' +
-                ", run='" + run + '\'' +
-                '}';
     }
 }
 
