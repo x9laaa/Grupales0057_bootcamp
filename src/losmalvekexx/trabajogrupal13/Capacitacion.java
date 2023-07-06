@@ -9,6 +9,62 @@ public class Capacitacion {
     private String duracion;
     private int cantidadAsistentes;
 
+    public int getIdentificador() {
+        return identificador;
+    }
+
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
+    }
+
+    public String getRutCliente() {
+        return rutCliente;
+    }
+
+    public void setRutCliente(String rutCliente) {
+        this.rutCliente = rutCliente;
+    }
+
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+
+    public int getCantidadAsistentes() {
+        return cantidadAsistentes;
+    }
+
+    public void setCantidadAsistentes(int cantidadAsistentes) {
+        this.cantidadAsistentes = cantidadAsistentes;
+    }
+
     public Capacitacion() {
     }
 
@@ -34,5 +90,12 @@ public class Capacitacion {
                 ", cantidadAsistentes=" + cantidadAsistentes +
                 '}';
     }
-}
 
+    //mostrarDetalle(): retorna un mensaje con el texto “La capacitación será en A a las B del día
+    //C, y durará D minutos”, en donde A es el lugar, B es la hora, C es el día y D son los minutos.
+
+    public String mostrarDetalle(){
+        return "La capacitación será en "+ lugar + " a las" + hora +" del día"+ dia+", y durará "+duracion+" minutos";
+    }
+
+}

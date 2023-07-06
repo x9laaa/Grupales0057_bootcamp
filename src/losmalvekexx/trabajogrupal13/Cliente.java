@@ -1,8 +1,9 @@
 package losmalvekexx.trabajogrupal13;
 public class Cliente {
+
+    private String telefono;
     private String rut;
     private String razonSocial;
-    private String telefono;
     private String direccion;
     private String comuna;
 
@@ -17,13 +18,10 @@ public class Cliente {
         this.comuna = comuna;
     }
 
-    public String getRazonSocial() {
-        return razonSocial;
+    public String obtenerNombre(){
+        return razonSocial + " " + rut;
     }
 
-    public void setRazonSocial(String xxx) {
-        this.razonSocial = xxx;
-    }
 
     @Override
     public String toString() {
@@ -34,5 +32,45 @@ public class Cliente {
                 ", direccion='" + direccion + '\'' +
                 ", comuna='" + comuna + '\'' +
                 '}';
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getRut() {
+        return rut;
+    }
+
+    public void setRut(String rut) {
+        this.rut = rut;
+    }
+
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getComuna() {
+        return comuna;
+    }
+
+    public void setComuna(String comuna) {
+        this.comuna = comuna;
     }
 }
