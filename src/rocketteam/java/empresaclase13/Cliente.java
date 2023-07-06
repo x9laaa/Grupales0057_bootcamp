@@ -13,7 +13,11 @@ public class Cliente {
     }
 
     public Cliente(int rut, String razonSocial, int telefono, String dirección, String comuna) {
-        if(rut < 99999999) this.rut = rut;
+
+        if (rut > 99999999) {
+            throw new IllegalArgumentException("El valor debe ser menor a 99999999");
+        }
+        else this.rut =rut;
         this.razonSocial = razonSocial;
         this.telefono = telefono;
         this.dirección = dirección;
@@ -25,8 +29,10 @@ public class Cliente {
     }
 
     public void setRut(int rut) {
-     if(rut < 99999999) this.rut = rut;
-
+        if (rut > 99999999) {
+            throw new IllegalArgumentException("El valor debe ser menor a 99999999");
+        }
+        else this.rut =rut;
     }
 
     public String getRazonSocial() {
