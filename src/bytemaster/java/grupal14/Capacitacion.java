@@ -97,5 +97,7 @@ public class Capacitacion {
       String texto="La Capacitacion sera en "+getLugar()+ " a las "+ getHora()+" del dia "+getDia()+" y durara "+getDuracion()+" minutos.";
       return texto;
     };
+
+
 }
 
