@@ -67,6 +67,10 @@ public class Cliente {
         this.comuna = comuna;
     }
 
+    public String obtenerNombre() {
+        return getRazonSocial() + " " + getRut();
+    }
+
     @Override
     public String toString() {
         return "Cliente" +
@@ -77,7 +81,4 @@ public class Cliente {
                 ", comuna='" + comuna + '\'' ;
     }
 
-    public String obtenerNombre() {
-        return getRazonSocial() + " " + getRut();
-    }
 }
