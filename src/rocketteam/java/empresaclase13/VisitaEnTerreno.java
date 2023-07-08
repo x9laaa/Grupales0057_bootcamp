@@ -41,6 +41,10 @@ public class VisitaEnTerreno {
 
     public void setComentarios(String comentarios) { this.comentarios = comentarios; }
 
+    public String obtenerDetalle {
+
+    }
+
     @Override
     public String toString() {
         return "VisitaEnTerreno{" +
