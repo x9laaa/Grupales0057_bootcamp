@@ -4,6 +4,19 @@ package losmalvekexx.trabajogrupal13;
 public class Main {
 
 public static void main(String[]args){
+
+    Listado listado = new Listado();
+
+    Cliente cliente1 = new Cliente("Los Malvekexxxx","03-04-2023","76325845-1",999999999,"Calle falsa 123","Santiago");
+    Profesional profesional1 = new Profesional("Malvekitoxx","03-04-2000","21546234-1","Analista Programador","03-04-2022");
+    Administrativo administrativo1 = new Administrativo("Don Malvekex","03-04-1975","9418326-1","Desarrollo",10);
+
+    listado.agregarUsuario(cliente1);
+    listado.agregarUsuario(profesional1);
+    listado.agregarUsuario(administrativo1);
+
+    listado.validarUsuario();
+
     /*
     Cliente cliente = new Cliente("73123123-9", "Importadora Pita", "932343456", "Av Los Libertadores #4024 ", "Macul");
      System.out.println("\n"+cliente.toString());

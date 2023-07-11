@@ -1,11 +1,11 @@
 package losmalvekexx.trabajogrupal13;
 
-import losmalvekexx.trabajogrupal13.Interfaces.Asesoria;
+import losmalvekexx.trabajogrupal13.Interfaces.IAsesoria;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Usuario implements Asesoria {
+public class Usuario implements IAsesoria {
     private String nombre;
     private String fechaNacimiento; //1996-12-30
     private String run;
