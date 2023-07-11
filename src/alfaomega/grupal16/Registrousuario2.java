@@ -1,6 +1,6 @@
 
 
-package alfaomega.grupal12.grupal8;
+package alfaomega.grupal16;
 
 import java.util.Scanner;
 
@@ -48,7 +48,7 @@ public class Registrousuario2 {
                      * Verifica si el tipo de usuario es "cliente" e ingresa la dirección del cliente
                      * @param tipoUsuario el tipo de usuario a comparar con "cliente"
                      * @param nombre el nombre del cliente
-                     * @param fechaNacimiento la fecha de nacimiento del cliente
+                     * 0@param fechaNacimiento la fecha de nacimiento del cliente
                      * @param run el RUN del cliente
                      *@param direccion la dirección del cliente
                      * @param telefono el teléfono del cliente

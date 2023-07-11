@@ -1,4 +1,4 @@
-package alfaomega.grupal12.grupal8;
+package alfaomega.grupal16;
 
 /**
  * Esta clase define objetos del profesional
