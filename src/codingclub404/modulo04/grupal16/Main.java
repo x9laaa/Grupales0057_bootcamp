@@ -15,8 +15,12 @@ public class Main {
         Administrativo usuario3 = new Administrativo("Cain", "Con-con", "0 años");
         listado.addUsuario(usuario3);
 
+        Cliente usuario4 = new Cliente("Dan", 10233244, "Dan Pan", "222111222", "Calle 1, 1234", "Las Condes");
+        listado.addUsuario(usuario4);
+
+        Usuario usuario5 = new Usuario("Ethan");
+        listado.addUsuario(usuario5);
+
         listado.analizarUsuarios();
-
-
     }
 }

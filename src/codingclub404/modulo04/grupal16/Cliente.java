@@ -1,21 +1,29 @@
 package codingclub404.modulo04.grupal16;
 
-public class Cliente {
+public class Cliente extends Usuario{
     private int rut;
     private String razonSocial;
     private String telefono;
     private String direccion;
     private String comuna;
 
-    public Cliente() {
-    }
-
-    public Cliente(int rut, String razonSocial, String telefono, String direccion, String comuna) {
+    public Cliente(String nombre, int rut, String razonSocial, String telefono, String direccion, String comuna) {
+        super(nombre);
         this.rut = rut;
         this.razonSocial = razonSocial;
         this.telefono = telefono;
         this.direccion = direccion;
         this.comuna = comuna;
+    }
+
+    @Override
+    public void analizarUsuario() {
+        super.analizarUsuario();
+        System.out.println(rut);
+        System.out.println(razonSocial);
+        System.out.println(telefono);
+        System.out.println(direccion);
+        System.out.println(comuna);
     }
 
     @Override
@@ -26,6 +34,7 @@ public class Cliente {
                 ", telefono='" + telefono + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", comuna='" + comuna + '\'' +
+                ", nombre='" + nombre + '\'' +
                 '}';
     }
 
