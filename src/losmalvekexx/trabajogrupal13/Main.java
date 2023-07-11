@@ -4,7 +4,7 @@ package losmalvekexx.trabajogrupal13;
 public class Main {
 
 public static void main(String[]args){
-
+    /*
     Cliente cliente = new Cliente("73123123-9", "Importadora Pita", "932343456", "Av Los Libertadores #4024 ", "Macul");
      System.out.println("\n"+cliente.toString());
 
@@ -55,5 +55,7 @@ public static void main(String[]args){
     capacitacion2.setDuracion("15 horas");
     System.out.println("La nueva capacitacion es el dia "+ capacitacion2.getDia() +" a las "+capacitacion2.getHora()+"hrs en "+capacitacion2.getLugar()
     + " con una duracion de "+capacitacion2.getDuracion() + " y tiene " + capacitacion2.getCantidadAsistentes() +" participantes");
+    */
     }
+
 }

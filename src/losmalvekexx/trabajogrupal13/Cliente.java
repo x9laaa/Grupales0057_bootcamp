@@ -1,61 +1,27 @@
 package losmalvekexx.trabajogrupal13;
-public class Cliente {
-
-    private String telefono;
-    private String rut;
-    private String razonSocial;
+public class Cliente extends Usuario{
+    // Nueva Estructura de Cliente por Grupal 16
+    private int telefono;
     private String direccion;
     private String comuna;
+
 
     public Cliente() {
     }
 
-    public Cliente(String rut, String razonSocial, String telefono, String direccion, String comuna) {
-        this.rut = rut;
-        this.razonSocial = razonSocial;
+    public Cliente(String nombre, String fechaNacimiento, String run, int telefono, String direccion, String comuna) {
+        super(nombre, fechaNacimiento, run);
         this.telefono = telefono;
         this.direccion = direccion;
         this.comuna = comuna;
     }
 
-    public String obtenerNombre(){
-        return razonSocial + " " + rut;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "rut='" + rut + '\'' +
-                ", razonSocial='" + razonSocial + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", comuna='" + comuna + '\'' +
-                '}';
-    }
-
-    public String getTelefono() {
+    public int getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
-    }
-
-    public String getRut() {
-        return rut;
-    }
-
-    public void setRut(String rut) {
-        this.rut = rut;
-    }
-
-    public String getRazonSocial() {
-        return razonSocial;
-    }
-
-    public void setRazonSocial(String razonSocial) {
-        this.razonSocial = razonSocial;
     }
 
     public String getDireccion() {
@@ -72,5 +38,22 @@ public class Cliente {
 
     public void setComuna(String comuna) {
         this.comuna = comuna;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "telefono=" + telefono +
+                ", direccion='" + direccion + '\'' +
+                ", comuna='" + comuna + '\'' +
+                '}';
+    }
+
+    @Override
+    public void analizarUsuario() {
+        super.analizarUsuario();
+        System.out.println("El Telefono es: "+getTelefono());
+        System.out.println("La Direccion es: "+getDireccion());
+        System.out.println("La Comuna es: "+getComuna());
     }
 }

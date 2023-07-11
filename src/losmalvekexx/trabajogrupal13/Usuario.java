@@ -1,9 +1,11 @@
 package losmalvekexx.trabajogrupal13;
 
+import losmalvekexx.trabajogrupal13.Interfaces.Asesoria;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Usuario {
+public class Usuario implements Asesoria {
     private String nombre;
     private String fechaNacimiento; //1996-12-30
     private String run;
@@ -80,5 +82,10 @@ public class Usuario {
 
     public void setRun(String run) {
         this.run = run;
+    }
+
+    @Override
+    public void analizarUsuario() {
+        System.out.println("El nombre del Usuario es: "+getNombre());
     }
 }
