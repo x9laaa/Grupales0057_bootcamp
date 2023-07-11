@@ -57,7 +57,6 @@ public class Usuario implements IAsesoria{
 
     @Override
     public void analizarUsuario() {
-        System.out.println("El nombre de usuario es: "+getNombre());
-
+        System.out.println("DATOS DE USUARIO\nEl nombre de usuario es: "+getNombre()+", Run: "+getRun()+" y su fecha nacimiento es: "+getFechaNacimiento());
     }
 }

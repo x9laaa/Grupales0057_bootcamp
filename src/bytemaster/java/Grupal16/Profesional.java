@@ -33,7 +33,7 @@ public class Profesional extends Usuario{
 
     @Override
     public String toString() {
-        return "Profesional{" +
+        return "\n Profesional{" +
                 "titulo='" + titulo + '\'' +
                 ", fechaIngreso=" + fechaIngreso +
                 "} " + super.toString();

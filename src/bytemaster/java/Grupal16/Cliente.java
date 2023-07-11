@@ -1,5 +1,7 @@
 package bytemaster.java.Grupal16;
 
+import java.time.LocalDate;
+
 public class Cliente extends Usuario {
     private String rut;
     private String razonSocial;
@@ -8,6 +10,15 @@ public class Cliente extends Usuario {
     private String comuna;
 
     public Cliente() {
+    }
+
+    public Cliente(String nombre, LocalDate fechaNacimiento, String run, String rut, String razonSocial, String telefono, String direccion, String comuna) {
+        super(nombre, fechaNacimiento, run);
+        this.rut = rut;
+        this.razonSocial = razonSocial;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.comuna = comuna;
     }
 
     public String getRut() {
@@ -50,24 +61,18 @@ public class Cliente extends Usuario {
         this.comuna = comuna;
     }
 
-    public Cliente(String rut, String razonSocial, String telefono, String direccion, String comuna) {
-        this.rut = rut;
-        this.razonSocial = razonSocial;
-        this.telefono = telefono;
-        this.direccion = direccion;
-        this.comuna = comuna;
-    }
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "\n Cliente{" +
                 "rut='" + rut + '\'' +
                 ", razonSocial='" + razonSocial + '\'' +
                 ", telefono='" + telefono + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", comuna='" + comuna + '\'' +
-                '}';
+                "} " + super.toString();
     }
+
     public String obtenerNombre(){
         String nombreC = "--------------------------\n"+"Mombre de empresa: "+getRazonSocial() + "\nRUT Empresa: " + getRut() + "\nDirecion: "+ getDireccion()+", "+getComuna()+"\n--------------------------";
         return nombreC;
