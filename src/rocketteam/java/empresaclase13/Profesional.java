@@ -1,15 +1,8 @@
-package rocketteam.java.grupal16;
+package rocketteam.java.empresaclase13;
 
 import java.time.LocalDate;
 
-/**
- Open/Closed Principle, OCP
- Este principio hace que clases y objetos no modifiquen su código base ni implementación original
- pero a la vez estén abiertos a modificaciones a través de instancias en otros objetos, la idea es mantener cerrada
- su implementación original pero a la vez esté abierto pequeñas modificaciones a través de herencia cuando se necesite.
- */
-
-public class Profesional extends Usuario {
+public class Profesional extends Usuario implements Asesoria {
     private String titulo;
     private LocalDate fechaIngreso;
     public Profesional() {
@@ -40,8 +33,7 @@ public class Profesional extends Usuario {
     @Override
     public void analizarUsuario() {
         super.analizarUsuario();
-        System.out.println("Fecha de ingreso: "+getFechaIngreso() + ", Título: " + getTitulo());
-        System.out.println();
+        System.out.println(getFechaIngreso() + " " + " " + getTitulo());
     }
 
     @Override
