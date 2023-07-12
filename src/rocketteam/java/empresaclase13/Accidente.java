@@ -52,7 +52,6 @@ public class Accidente {
     public void setConsecuencias(String consecuencias) {this.consecuencias = consecuencias;}
 
 
-
     @Override
     public String toString() {
         return "Accidente{" +
