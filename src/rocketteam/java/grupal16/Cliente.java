@@ -51,6 +51,7 @@ public class Cliente extends Usuario {
     public void analizarUsuario() {
         super.analizarUsuario();
         System.out.println("Teléfono: "+this.getTelefono()+", Dirección: "+this.getDireccion()+", Comuna: "+this.getComuna());
+        System.out.println();
     }
 
     @Override

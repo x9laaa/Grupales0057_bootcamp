@@ -36,6 +36,7 @@ public class Administrativo extends Usuario {
     public void analizarUsuario() {
         super.analizarUsuario();
         System.out.println("Área: "+getArea() +", Experiencia previa: "+ getExperienciaPrevia());
+        System.out.println();
     }
 
     @Override
