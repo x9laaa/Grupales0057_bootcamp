@@ -32,9 +32,7 @@ public class Revision {
 
     public void setEstado(int estado) {this.estado = estado;}
 
-    public String obtenerRevision(){
 
-    }
 
     @Override
     public String toString() {

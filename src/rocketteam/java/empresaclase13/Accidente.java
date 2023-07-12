@@ -51,9 +51,6 @@ public class Accidente {
 
     public void setConsecuencias(String consecuencias) {this.consecuencias = consecuencias;}
 
-    public String registroAccidentes(){
-
-    }
 
     @Override
     public String toString() {
