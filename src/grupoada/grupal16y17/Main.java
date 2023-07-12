@@ -1,8 +1,8 @@
-package grupoada.grupal16.grupal15;
-import grupoada.grupal16.grupal15.Interfaces.IAsesoria;
-import grupoada.grupal16.grupal15.Modelos.Administrativo;
-import grupoada.grupal16.grupal15.Modelos.Profesional;
-import grupoada.grupal16.grupal15.Modelos.Usuario;
+package grupoada.grupal16y17;
+import grupoada.grupal16y17.Interfaces.IAsesoria;
+import grupoada.grupal16y17.Modelos.Administrativo;
+import grupoada.grupal16y17.Modelos.Profesional;
+import grupoada.grupal16y17.Modelos.Usuario;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,6 +23,8 @@ public class Main {
             System.out.println(); // Imprimir una línea en blanco para separar la información de cada usuario
         }
     }
+
+    // En general esta clase cumple con los principios SOLID (más detalles en archivo de texto dentro del package).
 }
 
 

@@ -1,4 +1,4 @@
-package grupoada.grupal16.grupal15.Interfaces;
+package grupoada.grupal16y17.Interfaces;
 
 public interface IAsesoria {
     void analizarUsuario();

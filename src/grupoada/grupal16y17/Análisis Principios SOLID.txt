@@ -1,0 +1,39 @@
+Análisis Principios SOLID
+
+Principio de Responsabilidad Única:
+El principio de Responsabilidad Única establece que una clase debe tener una única responsabilidad
+y motivo para cambiar. En el código de cada clase, se cumple este principio ya que cada una tiene
+la responsabilidad de representar un objeto y manejar sus propiedades relacionadas,
+como el área y la experiencia previa. No hay una mezcla de responsabilidades entre sí.
+
+Principio Abierto/Cerrado:
+El principio Abierto/Cerrado establece que una clase debe estar abierta para su extensión pero cerrada
+para su modificación. Todas las clases cumplen con este principio ya que se pueden extender mediante
+herencia de la clase Usuario y la implementación de la interfaz IAsesoria, sin necesidad de
+modificar directamente las clases heredadas.
+
+Principio de Sustitución de Liskov:
+Se puede decir que se cumple el principio de Sustitución de Liskov ya que las subclases como
+'Administrativo' y 'Profesional' son utilizables en lugar de la clase base 'Usuario' sin causar
+errores de tipo ni excepciones inesperadas. Además, las subclases no modifican el comportamiento
+de los métodos heredados ni introducen nuevas restricciones más estrictas.
+En el método analizarUsuario(), la subclase Administrativo simplemente invoca al método analizarUsuario()
+de la clase base utilizando super.analizarUsuario(), lo que demuestra que se mantiene el comportamiento
+esperado de la clase base. El principio de Sustitución de Liskov establece que los objetos de una superclase
+deben poder ser reemplazados por objetos de sus subclases sin alterar la integridad del programa.
+
+Principio de Segregación de Interfaces:
+El principio de Segregación de Interfaces establece que una interfaz debe ser cohesiva y contener solo
+los métodos que son relevantes para sus clientes. En el código se cumple este principio ya que la interfaz
+IAsesoria tiene un único método analizarUsuario(), que es relevante para la funcionalidad relacionada
+con la asesoría. No se incluyen métodos innecesarios en la interfaz.
+
+Principio de Inversión de Dependencias:
+El principio de Inversión de Dependencias establece que los módulos de alto nivel no deben depender de
+módulos de bajo nivel, ambos deben depender de abstracciones. También se cumple este principio ya que
+la clases 'Administrativo' y 'Profesional' dependen de abstracciones a través de la herencia de la
+clase Usuario y la implementación de la interfaz IAsesoria. Esto permite una mayor flexibilidad y
+facilita los cambios y extensiones futuras.
+
+En general, el código cumple con los principios SOLID, lo que ayuda a lograr una codificación
+de calidad y un diseño robusto y flexible.

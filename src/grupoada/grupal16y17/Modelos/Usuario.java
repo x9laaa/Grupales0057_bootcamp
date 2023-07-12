@@ -1,6 +1,6 @@
-package grupoada.grupal16.grupal15.Modelos;
+package grupoada.grupal16y17.Modelos;
 
-import grupoada.grupal16.grupal15.Interfaces.IAsesoria;
+import grupoada.grupal16y17.Interfaces.IAsesoria;
 
 public class Usuario implements IAsesoria {
     private String nombre;
@@ -56,4 +56,6 @@ public class Usuario implements IAsesoria {
     public void analizarUsuario() {
         System.out.println("Nombre de usuario: " + nombre);
     }
+
+// En general esta clase cumple con los principios SOLID (más detalles en archivo de texto dentro del package).
 }

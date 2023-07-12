@@ -1,7 +1,6 @@
-package grupoada.grupal16.grupal15.Modelos;
+package grupoada.grupal16y17.Modelos;
 
-import grupoada.grupal16.grupal15.Interfaces.IAsesoria;
-import grupoada.grupal16.grupal15.Modelos.Usuario;
+import grupoada.grupal16y17.Interfaces.IAsesoria;
 
 public class Administrativo extends Usuario implements IAsesoria {
     private String area;
@@ -44,5 +43,7 @@ public class Administrativo extends Usuario implements IAsesoria {
     public void analizarUsuario() {
         super.analizarUsuario();
     }
+
+    // En general esta clase cumple con los principios SOLID (más detalles en archivo de texto dentro del package).
 }
 

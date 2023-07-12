@@ -1,9 +1,6 @@
-package grupoada.grupal16.grupal15;
+package grupoada.grupal16y17;
 
-import grupoada.grupal16.grupal15.Interfaces.IAsesoria;
-import grupoada.grupal16.grupal15.Modelos.Administrativo;
-import grupoada.grupal16.grupal15.Modelos.Profesional;
-import grupoada.grupal16.grupal15.Modelos.Usuario;
+import grupoada.grupal16y17.Interfaces.IAsesoria;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +19,8 @@ public class Listado {
     public List<IAsesoria> getUsuarios() {
         return usuarios;
     }
+
+    // En general esta clase cumple con los principios SOLID (más detalles en archivo de texto dentro del package).
 }
 
 

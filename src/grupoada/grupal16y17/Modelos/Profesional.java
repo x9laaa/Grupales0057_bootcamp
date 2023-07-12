@@ -1,7 +1,6 @@
-package grupoada.grupal16.grupal15.Modelos;
+package grupoada.grupal16y17.Modelos;
 
-import grupoada.grupal16.grupal15.Interfaces.IAsesoria;
-import grupoada.grupal16.grupal15.Modelos.Usuario;
+import grupoada.grupal16y17.Interfaces.IAsesoria;
 
 public class Profesional extends Usuario implements IAsesoria {
     private String titulo;
@@ -45,5 +44,7 @@ public class Profesional extends Usuario implements IAsesoria {
         System.out.println("Título: " + titulo);
         System.out.println("Fecha de ingreso: " + fechaIngreso);
     }
+
+    // En general esta clase cumple con los principios SOLID (más detalles en archivo de texto dentro del package).
 }
 
