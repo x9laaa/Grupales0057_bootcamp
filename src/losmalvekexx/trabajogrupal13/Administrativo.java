@@ -1,5 +1,21 @@
 package losmalvekexx.trabajogrupal13;
 
+
+/*
+Cumple con el principio de Responsabilidad Única al tener la responsabilidad de representar
+ a un administrativo y almacenar sus atributos específicos como área y experiencia previa.
+
+Implementa el método analizarUsuario() para mostrar información específica del administrativo.
+
+
+En el código actual, no se viola el principio de Sustitución de Liskov,
+ya que las clases derivadas (Profesional, Cliente y Administrativo) no
+introducen comportamientos que alteren la semántica de la clase base (Usuario).
+
+
+
+ */
+
 public class Administrativo extends Usuario{
 
     private String area;

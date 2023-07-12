@@ -1,11 +1,19 @@
 package losmalvekexx.trabajogrupal13;
 
-import losmalvekexx.trabajogrupal13.Interfaces.IAsesoria;
+import losmalvekexx.trabajogrupal13.Interfaces.IUsuario;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Usuario implements IAsesoria {
+/*
+Cumple con el principio de Responsabilidad Única al tener la responsabilidad
+de representar a un usuario y almacenar sus atributos generales como nombre,
+fecha de nacimiento y RUN.
+Implementa el método mostrarEdad() para calcular y mostrar la edad del usuario.
+Implementa el método analizarUsuario() para mostrar información general del usuario.
+ */
+
+public class Usuario implements IUsuario {
     private String nombre;
     private String fechaNacimiento; //1996-12-30
     private String run;

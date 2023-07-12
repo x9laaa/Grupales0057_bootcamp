@@ -1,5 +1,14 @@
 package losmalvekexx.trabajogrupal13;
 
+
+/*
+Cumple con el principio de Responsabilidad Única al tener la responsabilidad de representar
+una capacitación y almacenar sus atributos específicos como identificador, rut del cliente,
+día, hora, lugar, duración y cantidad de asistentes.
+
+Implementa el método mostrarDetalle() para mostrar detalles específicos de la capacitación.
+ */
+
 public class Capacitacion {
     private int identificador;
     private String rutCliente;

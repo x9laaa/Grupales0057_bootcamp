@@ -1,5 +1,19 @@
 package losmalvekexx.trabajogrupal13;
 
+
+/*
+.Cumple con el principio de Responsabilidad Única al tener la responsabilidad
+de representar a un profesional y almacenar sus atributos específicos
+como el título y la fecha de ingreso.
+Implementa el método analizarUsuario() para mostrar información específica del profesional.
+
+En el código actual, no se viola el principio de Sustitución de Liskov,
+ya que las clases derivadas (Profesional, Cliente y Administrativo) no
+introducen comportamientos que alteren la semántica de la clase base (Usuario).
+
+
+ */
+
 public class Profesional extends Usuario{
     private String titulo;
     private String fechaIngreso;

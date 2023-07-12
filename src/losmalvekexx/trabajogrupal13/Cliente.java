@@ -1,4 +1,20 @@
 package losmalvekexx.trabajogrupal13;
+
+/*
+Cumple con el principio de Responsabilidad Única al tener la responsabilidad
+de representar a un cliente y almacenar sus atributos específicos como teléfono,
+dirección y comuna.
+
+Implementa el método analizarUsuario() para mostrar información específica del cliente.
+
+
+En el código actual, no se viola el principio de Sustitución de Liskov,
+ya que las clases derivadas (Profesional, Cliente y Administrativo) no
+introducen comportamientos que alteren la semántica de la clase base (Usuario).
+
+
+ */
+
 public class Cliente extends Usuario{
     // Nueva Estructura de Cliente por Grupal 16
     private int telefono;
