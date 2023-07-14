@@ -43,6 +43,8 @@ public class Usuario {
         this.run = run;
     }
 
+    public void analizarUsuario(){System.out.println(getNombre());}
+
     public String mostrarEdad(){
         LocalDate fechaActual = LocalDate.now();
         Period periodo = Period.between(getFechaNac(), fechaActual);
