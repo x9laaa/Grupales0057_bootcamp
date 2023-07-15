@@ -1,4 +1,4 @@
-package com.example;
+package grupoada.grupal18.src.test.java.com.example;
 
 public class Calculator {
 
