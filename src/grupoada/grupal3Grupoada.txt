@@ -1,0 +1,29 @@
+Una compañía de seguros ha elaborado una sesión de lluvia de ideas, en las que se han planteado ciertas observaciones que se desea analizar prontamente. 
+A fin de ordenar las ideas, se ha solicitado:
+
+1.- Formalizar la frase.
+2.- ¿Es posible representar el resultado anterior como un algoritmo en pseudocódigo? 
+De ser posible, transfórmelo a PSeInt atomizando las frases y asignando un valor de verdad; en caso contrario, justifique por qué no se puede hacer.
+
+La frase en cuestión es:
+“Si un trabajador no cuida los procedimientos de seguridad, ocurrirá un accidente. 
+Si el trabajador no lee el manual de seguridad interno sucedería lo mismo. 
+El trabajador no ha sufrido incidentes. De ahí concluimos que ha seguido todos los procedimientos de seguridad, y ha leído el manual de seguridad interno”.
+
+--
+
+Desarrollo:
+
+Sí es posible, primero se definen las variables:
+
+P: El trabajador cuida los procedimientos de seguridad
+Q: El trabajador lee el manual de seguridad interno
+R: Ocurre un accidente
+
+Expresiones lógicas:
+
+Si ~P o ~Q entonces R
+Si ~Q entonces R
+Si ~C Entonces A y B
+
+*Donde ~ representa la negación.
