@@ -1,4 +1,4 @@
-package codingclub404;  //nombre del package debe ir en minúsculas
+package codingclub404.modulo04.grupal11;  //nombre del package debe ir en minúsculas
 
 public class Grupal11 {  //el nombre de la clase debe ser la primera letra mayúscula y luego camelCase
     public static void main(String[] args) {
