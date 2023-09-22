@@ -1,0 +1,91 @@
+Proceso CompaniaSeguros
+    Definir rut Como Entero
+    Definir nombres Como Cadena
+    Definir apellidos Como Cadena
+    Definir telefono Como Cadena
+    Definir afp Como Cadena
+    Definir sistemaSalud Como Entero
+    Definir direccion Como Cadena
+    Definir comuna Como Cadena
+    Definir edad Como Entero
+
+    Escribir "Ingrese su RUT sin guión ni digito verificador: "
+    Leer rut
+
+    Escribir "Ingrese sus nombres: "
+    Leer nombres
+
+    Escribir "Ingrese sus apellidos: "
+    Leer apellidos
+
+    Escribir "Ingrese su teléfono (no más de 15 caracteres): "
+    Leer telefono
+
+    Escribir "Ingrese su AFP: "
+    Leer afp
+    Escribir "Ingrese su sistema de salud (1 para Fonasa, 2 para Isapre): "
+        Leer sistemaSalud
+
+        Escribir "Ingrese su dirección (texto no superior a 50 caracteres): "
+        Leer direccion
+
+        Escribir "Ingrese su comuna: "
+        Leer comuna
+
+        Escribir "Ingrese su edad (menor a 120 años): "
+        Leer edad
+
+
+    Si rut >= 99999999 Entonces
+        Escribir "Error: El RUT ingresado no es válido."
+	Sino
+		Si nombres = "" Entonces
+        Escribir "Error: El campo Nombres es obligatorio."
+	Sino
+		Si apellidos = "" Entonces
+        Escribir "Error: El campo Apellidos es obligatorio."
+	Sino
+		Si Longitud(telefono) > 15 Entonces
+        Escribir "Error: El teléfono ingresado no es válido."
+	Sino
+		Si afp = "" Entonces
+        Escribir "Error: El campo AFP es obligatorio."
+	Sino
+		Si sistemaSalud <> 1 Y sistemaSalud <> 2 Entonces
+        Escribir "Error: El sistema de salud ingresado no es válido."
+	Sino
+		Si Longitud(direccion) > 50 Entonces
+        Escribir "Error: La dirección ingresada supera los 50 caracteres."
+	Sino
+		Si comuna = "" Entonces
+        Escribir "Error: El campo Comuna es obligatorio."
+	Sino
+		Si edad >= 120 Entonces
+        Escribir "Error: La edad ingresada no es válida."
+    Sino
+
+        Escribir "Datos del cliente:"
+        Escribir "RUT:", rut
+        Escribir "Nombres:", nombres
+        Escribir "Apellidos:", apellidos
+        Escribir "Teléfono:", telefono
+        Escribir "AFP:", afp
+        Escribir "Sistema de salud:"
+		Si sistemaSalud = 1 Entonces
+			sistemaSalud=Fonasa
+		Sino sistemaSalud=Isapre
+				Escribir "Dirección:", direccion
+				Escribir "Comuna:", comuna
+				Escribir "Edad:", edad
+			FinSi
+		FinSi
+	FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+
+FinProceso
